@@ -1,0 +1,335 @@
+/******** PAGE ENTIERE ***********/
+#bloc-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+  width: 100%;
+}
+
+/******* MAIN *******/
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main h2 {
+  font-size: 2.5em;
+  color: black;
+  font-family: 'Noto Sans JP', sans-serif;
+  text-align: center;
+  margin-top: 45px;
+}
+
+/*******header********/
+header {
+  background-color: seagreen;
+  width: 100%;
+  height: 170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header h1 {
+  color: yellow;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 70px;
+  font-weight: bold;
+  margin: auto;
+}
+
+header a {
+  text-decoration: none;
+  color: yellow;
+}
+
+header a:hover {
+  color: blue;
+}
+
+/******medias queries header******/
+@media all and (max-width: 900px) {
+  header {
+    height: 100px;
+  }
+  header h1 {
+    font-size: 50px;
+  }
+}
+
+/********* FOOTER **********/
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: seagreen;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 110px;
+}
+
+footer p {
+  color: yellow;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  padding: 5px;
+  font-size: 35px;
+  display: inline-block;
+}
+
+footer a {
+  text-decoration: none;
+  color: yellow;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@-webkit-keyframes wiggle {
+  0% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+  }
+  100% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+}
+
+@keyframes wiggle {
+  0% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+  }
+  100% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+}
+
+footer a:hover {
+  color: blue;
+}
+
+footer p:hover {
+  -webkit-animation-name: wiggle;
+          animation-name: wiggle;
+  -webkit-animation-duration: 150ms;
+          animation-duration: 150ms;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+/****** MEDIAS QUERIES FOOTER ******/
+@media all and (max-width: 900px) {
+  footer p {
+    font-size: 1.5em;
+  }
+}
+
+/*******Note de musique******/
+#music1, #music2, #music3 {
+  background: -webkit-gradient(linear, left top, right top, from(#f15f62), to(#f6916a));
+  background: linear-gradient(to right, #f15f62, #f6916a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/******* CORPS DE LA PAGE 1 *******/
+main {
+  Height: 1630px;
+}
+
+/********** BLOC MENU *********/
+#bloc-menu {
+  width: 80%;
+  background-color: #fcdfdb;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 6px 6px 22px grey;
+          box-shadow: 6px 6px 22px grey;
+  color: #3d1319;
+}
+
+/******* ICONE ET TITRE MENU ******/
+#menu-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#menu-title p {
+  font-size: 70px;
+  margin-bottom: -10px;
+}
+
+#menu-title h2 {
+  font-size: 4em;
+  color: #3d1319;
+  font-family: "Dancing Script", cursive;
+  margin-top: -8px;
+  margin-bottom: -15px;
+}
+
+/******* FIN ICONE ET TITRE MENU ******/
+/********* LES 3 PARTIES DU MENU ********/
+.dish {
+  padding-top: 25px;
+}
+
+.dish p, .line p, .subtitle {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+/********* FIN LES 3 PARTIES DU MENU ********/
+/*********** SOUS-TITRES *************/
+.subtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.subtitle h4 {
+  font-family: "Caveat", cursive;
+  font-size: 2.5em;
+  background: linear-gradient(to top, #3d1319 0%, #3d1319 2px, transparent 2px) no-repeat left bottom/0 100%;
+  -webkit-transition: background-size 0.50s;
+  transition: background-size 0.50s;
+}
+
+h4:hover {
+  background-size: 100% 100%;
+}
+
+/*********** FIN SOUS-TITRES *************/
+/******* LIGNES DE SEPARATION HR ********/
+hr {
+  width: 300px;
+  height: 5px;
+  background-color: #3d1319;
+  border: 1px solid #3d1319;
+  border-radius: 20px;
+}
+
+/******* FIN LIGNES DE SEPARATION HR ********/
+/********* PARAGRAPHES *******/
+.paragraph {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 90px;
+  font-family: "Caveat", cursive;
+  font-size: 2em;
+}
+
+.price {
+  padding-right: 100px;
+}
+
+.line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/********* FIN PARAGRAPHES *******/
+/**** RAPPEL TITRE DE MENU *****/
+#end-of-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 25px;
+  padding-bottom: 15px;
+}
+
+#end-of-menu p {
+  font-size: 40px;
+}
+
+#end-of-menu h3 {
+  font-size: 2.5em;
+  margin-left: 20px;
+  font-family: "Dancing Script", cursive;
+}
+
+/**** FIN RAPPEL TITRE DE MENU *****/
+/******* MEDIA QUERIES ********/
+@media all and (max-width: 900px) {
+  main {
+    height: 80em;
+  }
+  main h2 {
+    font-size: 1em;
+    margin-top: 2px;
+  }
+  #menu-title h2, #menu-title p {
+    font-size: 2em;
+  }
+  .dish h4 {
+    font-size: 2em;
+    text-align: center;
+    margin-top: -20px;
+  }
+  hr {
+    width: 25px;
+  }
+  .paragraph p {
+    font-size: 0.7em;
+  }
+  .price {
+    margin-left: 15px;
+  }
+  #entree .paragraph, #resistance .paragraph {
+    margin-left: -80px;
+    margin-right: -90px;
+    margin-top: -25px;
+  }
+  #dessert .paragraph {
+    margin-left: -80px;
+    margin-top: -25px;
+  }
+  #end-of-menu h3, #end-of-menu p {
+    font-size: 1.5em;
+  }
+}
+
+/******* FIN MEDIA QUERIES ********/
+/*# sourceMappingURL=style-menu1.css.map */

@@ -1,0 +1,18 @@
+{
+  "name": "version-6",
+  "version": "1.0.0",
+  "description": "Projet 3",
+  "main": "index.js",
+  "scripts": {
+    "index" : "sass --watch ./sass/style-index.scss:./sass/style-index.css",
+    "legal" : "sass --watch ./sass/style-legal.scss:./sass/style-legal.css",
+    "menu1" : "sass --watch ./sass/style-menu1.scss:./sass/style-menu1.css",
+    "menu2" : "sass --watch ./sass/style-menu2.scss:./sass/style-menu2.css",
+    "menu3" : "sass --watch ./sass/style-menu3.scss:./sass/style-menu3.css",
+    "menu4" : "sass --watch ./sass/style-menu4.scss:./sass/style-menu4.css"
+    
+  },
+  "author": "Sansan79M",
+  "license": "ISC"
+  
+}

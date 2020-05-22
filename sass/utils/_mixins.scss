@@ -1,0 +1,48 @@
+//==BLOC-MENUS==========================
+
+//Shadow bloc-menus and cards
+@mixin shadow 
+{box-shadow:6px 6px 22px grey;}
+
+//padding : bloc-menu
+@mixin padding-bloc-menus 
+{padding-top: 20px;
+padding-bottom: 35px;}
+
+//align center : bloc-menu
+@mixin align-bloc-menu
+{align-self: center;
+align-items: center;}
+
+//==FIN BLOC-MENUS======================
+
+
+//==MENU-TITLE==========================
+
+//menu-title : center
+@mixin title-center
+{text-align: center;}
+
+//==FIN MENU-TITLE======================
+
+
+//==SOUS-TITRES=========================
+
+@mixin subtitle-align
+{display: flex;
+align-items: baseline; }
+
+@mixin underline 
+{background-size: 100% 100%; }
+
+//==FIN SOUS-TITRES=====================
+
+
+//==LIGNES PARAGRAPHE/PRIX==============
+
+@mixin p-price-line
+{ display: flex;
+    align-items: baseline;
+    justify-content: space-between;}
+
+//==FIN LIGNES PARAGRAPHE/PRIX==========

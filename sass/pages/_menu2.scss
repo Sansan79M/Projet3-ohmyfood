@@ -1,0 +1,161 @@
+
+/******* CORPS DE LA PAGE 2 *******/
+main { height: 1400px;}
+
+/********** BLOC MENU *********/
+#bloc-menu {
+    width: $width-b-m;
+    background-color: $background-menu2;
+    @include padding-bloc-menus ;
+    @include align-bloc-menu;
+    @include shadow;
+}
+
+/******* TITRE MENU ******/
+#menu-title {
+    @include title-center;
+    margin-bottom: 30px;
+ h2 {
+        font-size: 4em;
+        font-family: $fontm2;
+        font-weight: bold;
+        background: linear-gradient(to right, rgb(198, 116, 18), rgb(165, 103, 153), rgb(110, 76, 204));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+/******* FIN TITRE MENU ******/
+
+/********* LES 3 PARTIES DU MENU ********/
+.dish {
+    padding-top: 18px;
+    padding-bottom: 15px;
+}
+    .dish p, .line p, .subtitle {
+        margin-top: 2px;
+        margin-bottom: 10px;
+    }
+/********* FIN LES 3 PARTIES DU MENU ********/
+
+/*********** SOUS-TITRES *************/
+.subtitle {@include subtitle-align;
+h4 {
+    font-size: 2em;
+    font-family: $fontm2;
+}
+}
+#entree h4 {
+    background: linear-gradient(to top, $color-text1-menu2 0%, $color-text1-menu2 2px, transparent 2px) no-repeat left bottom / 0 100%;
+    transition: background-size 0.50s;
+}
+#resistance h4 {
+    background: linear-gradient(to top, $color-text2-menu2 0%, $color-text2-menu2 2px, transparent 2px) no-repeat left bottom / 0 100%;
+    transition: background-size 0.50s;
+}
+#dessert h4 {
+    background: linear-gradient(to top, $color-text3-menu2 0%, $color-text3-menu2 2px, transparent 2px) no-repeat left bottom / 0 100%;
+    transition: background-size 0.50s;
+}
+#entree h4:hover, #resistance h4:hover, #dessert h4:hover 
+{@include underline;}
+/*********** FIN SOUS-TITRES *************/
+
+/******* LIGNES DE SEPARATION HR ********/
+hr {
+    width: 300px;
+    height: 5px;
+    border-radius: 20px;
+}
+#hr1 {
+    border: 1px solid $color-text1-menu2;
+    background-color: $color-text1-menu2;
+}
+#hr1b {
+    border: 1px solid $color-text1-menu2;
+    background-color: $color-text1-menu2;
+}
+#hr2 {
+    border: 1px solid $color-text2-menu2;
+    background-color: $color-text2-menu2;
+}
+#hr2b {
+    border: 1px solid $color-text2-menu2;
+    background-color: $color-text2-menu2;
+}
+#hr3 {
+    border: 1px solid $color-text3-menu2;
+    background-color: $color-text3-menu2;
+}
+#hr3b {
+    border: 1px solid $color-text3-menu2;
+    background-color: $color-text3-menu2;
+}
+/******* FIN LIGNES DE SEPARATION HR ********/
+
+/********* PARAGRAPHES *******/
+#entree h4, #entree p{
+    color: rgb(198, 116, 18);
+}
+#resistance h4, #resistance p {
+    color: rgb(165, 103, 153);
+}
+#dessert h4, #dessert p {
+    color: rgb(110, 76, 204);
+}
+.paragraph {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 75px;
+    margin: 2%;
+    font-size:1.5em;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Josefin Slab', serif;
+}
+.price {padding-right: 80px;}
+.line {@include p-price-line;}
+/********* FIN PARAGRAPHES *******/
+
+/******* MEDIA QUERIES ********/
+@media all and (max-width: 900px) {
+
+    main
+    {height: 65em;
+    h2{ font-size: 1em;
+    margin-top:2px;}
+    }
+    
+    #menu-title h2
+    {font-size: 2em;} 
+    
+    .dish h4
+    {font-size:2em;
+    text-align: center;
+    margin-top:-20px;}
+    
+    hr
+    {width:25px;}
+    
+    .paragraph p
+    {font-size:0.7em;
+    margin-bottom:15px;}
+
+    #dessert .paragraph p
+    {margin-bottom:3px;}
+    
+    .price{margin-left:15px;}
+    
+    #entree .paragraph, #resistance .paragraph
+    {margin-left: -70px;
+    margin-right: -75px;
+    margin-top:-30px;}
+    
+    #dessert .paragraph
+    {margin-left: -70px;
+    margin-top:-30px;}
+
+    #resistance, #dessert
+    {margin-top: 10px;}  
+     
+    }
+/******* FIN MEDIA QUERIES ********/

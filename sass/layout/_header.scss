@@ -1,0 +1,29 @@
+/*******header********/
+header {
+    background-color:$background-h-f;
+    width: 100%;
+    height: 170px;
+    display:flex;
+}
+header h1{  
+    color:$color-h-f;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold; 
+    font-size:70px;
+    font-weight: bold; 
+    margin:auto; 
+}
+header a {
+    text-decoration: none;
+    color:yellow;
+}
+header a:hover{
+    color: $color-hover-h;
+}
+
+/******medias queries header******/
+@media all and (max-width: 900px) {
+    header{height:100px;}
+    header h1
+    {font-size:50px;}
+}

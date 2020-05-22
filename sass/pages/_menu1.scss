@@ -1,0 +1,132 @@
+
+/******* CORPS DE LA PAGE 1 *******/
+main { Height: 1630px; }
+
+/********** BLOC MENU *********/
+#bloc-menu {
+    width: $width-b-m;
+    background-color: $background-menu1;
+    @include align-bloc-menu;
+    @include shadow;
+    color: $color-text-menu1;
+}
+
+/******* ICONE ET TITRE MENU ******/
+#menu-title {
+    @include title-center;
+    margin-bottom: 30px;
+ p {
+        font-size: 70px;
+        margin-bottom: -10px;
+    }
+ h2 {
+        font-size: 4em;
+        color: rgb(61, 19, 25);
+        font-family: $fontm1-title;
+        margin-top:-8px;
+        margin-bottom: -15px;
+    }
+}
+/******* FIN ICONE ET TITRE MENU ******/
+
+/********* LES 3 PARTIES DU MENU ********/
+.dish {
+    padding-top: 25px;
+    }
+    .dish p, .line p, .subtitle {
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+
+/********* FIN LES 3 PARTIES DU MENU ********/
+
+/*********** SOUS-TITRES *************/
+.subtitle {@include subtitle-align;
+h4 {
+        font-family: $fontm1-subtitle-p;
+        font-size: 2.5em;
+        background: linear-gradient(to top, $color-text-menu1 0%, $color-text-menu1 2px, transparent 2px) no-repeat left bottom / 0 100%;
+        transition: background-size 0.50s;
+    }
+}
+h4:hover {@include underline;}
+/*********** FIN SOUS-TITRES *************/
+
+/******* LIGNES DE SEPARATION HR ********/
+hr {
+    width: 300px;
+    height: 5px;
+    background-color: $color-text-menu1;
+    border: 1px solid $color-text-menu1;
+    border-radius: 20px;
+}
+/******* FIN LIGNES DE SEPARATION HR ********/
+
+/********* PARAGRAPHES *******/
+.paragraph {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 90px;
+    font-family: $fontm1-subtitle-p;
+    font-size: 2em;
+}
+.price {padding-right: 100px;}
+.line {@include p-price-line;}
+/********* FIN PARAGRAPHES *******/
+
+/**** RAPPEL TITRE DE MENU *****/
+#end-of-menu {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    margin-top:25px;
+    padding-bottom:15px;
+ p {font-size: 40px; }
+ h3 {
+        font-size: 2.5em;
+        margin-left: 20px;
+        font-family: $fontm1-title;
+    }
+}
+/**** FIN RAPPEL TITRE DE MENU *****/
+
+/******* MEDIA QUERIES ********/
+@media all and (max-width: 900px) {
+
+main
+{height: 80em;
+h2{ font-size: 1em;
+margin-top:2px;}
+}
+
+#menu-title h2, #menu-title p
+{font-size: 2em;} 
+
+.dish h4
+{font-size:2em;
+text-align: center;
+margin-top:-20px;}
+
+hr
+{width:25px;}
+
+.paragraph p
+{font-size:0.7em;}
+
+.price{margin-left:15px;}
+
+#entree .paragraph, #resistance .paragraph
+{margin-left: -80px;
+margin-right: -90px;
+margin-top:-25px;}
+
+#dessert .paragraph
+{margin-left: -80px;
+margin-top:-25px;}
+
+#end-of-menu h3, #end-of-menu p
+{font-size:1.5em;}  
+
+}
+/******* FIN MEDIA QUERIES ********/
