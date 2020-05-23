@@ -18,3 +18,9 @@ main h2 {
     text-align: center;
     margin-top: 45px;
 } 
+/****** MEDIAS QUERIES BLOC-PAGE ******/
+@media all and (max-width: 900px) {
+    #bloc-page{
+        margin:0;
+    }
+}

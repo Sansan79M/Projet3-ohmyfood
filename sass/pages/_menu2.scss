@@ -21,6 +21,7 @@ main { height: 1400px;}
         font-weight: bold;
         background: linear-gradient(to right, rgb(198, 116, 18), rgb(165, 103, 153), rgb(110, 76, 204));
         -webkit-background-clip: text;
+        background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 }
@@ -39,6 +40,8 @@ main { height: 1400px;}
 
 /*********** SOUS-TITRES *************/
 .subtitle {@include subtitle-align;
+    margin-left: 40px;
+    margin-right: 40px; 
 h4 {
     font-size: 2em;
     font-family: $fontm2;
@@ -62,9 +65,11 @@ h4 {
 
 /******* LIGNES DE SEPARATION HR ********/
 hr {
-    width: 300px;
+    width: 280px;
     height: 5px;
     border-radius: 20px;
+    margin-left:15px ;
+    margin-right:15px ;
 }
 #hr1 {
     border: 1px solid $color-text1-menu2;

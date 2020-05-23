@@ -36,29 +36,29 @@
     opacity:0;
 }
 /********POINTS DE SUSPENSION*****/
-@keyframes magic{
+@keyframes wait{
     From {opacity:0;}
     to {opacity:1;}
     }
 #bubble:hover #dot1 {
-    animation-name:magic;
+    animation-name:wait;
     animation-delay: 0.2s;
     animation-duration: 1.4s;
 }
 #bubble:hover #dot2{
-    animation-name:magic;
+    animation-name:wait;
     animation-delay : 0.4s;
     animation-duration : 1.2s;
 }
 #bubble:hover #dot3{
-    animation-name:magic;
+    animation-name:wait;
     animation-delay : 0.6s;
     animation-duration : 1s;
 }
 #bubble:hover #dot1, #bubble:hover #dot2, #bubble:hover #dot3 {   
-    animation-name:magic;
+    animation-name:wait;
     animation-duration:1.5s;
-    animation-fill-mode: bacwards;
+    animation-fill-mode: backwards;
     animation-iteration-count : infinite;
 }
 /******* FIN BULLE PROCHAINEMENT*******/

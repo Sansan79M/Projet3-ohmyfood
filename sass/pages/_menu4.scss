@@ -22,6 +22,7 @@ main { height: 1550px; }
         font-style: italic;
         background: linear-gradient(to right, $color-dark-menu4, $color-light-menu4);
         -webkit-background-clip: text;
+        background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 }
@@ -39,14 +40,16 @@ main { height: 1550px; }
 /********* FIN LES 3 PARTIES DU MENU ********/
 
 /*********** SOUS-TITRES *************/
-.subtitle {@include subtitle-align;}
+.subtitle {@include subtitle-align;
+    margin-left: 30px;
+    margin-right: 30px;
 h4 {
         font-size: 2em;
         color: $color-text-menu4;
         font-family: $fontm4;
         font-style: italic;
     }
-
+}
     h4 {
     background: linear-gradient(to top, $color-dark-menu4 0%, $color-light-menu4 2px, transparent 2px) no-repeat left bottom / 0 100%;
     transition: background-size 0.50s;
@@ -63,10 +66,12 @@ hr {
 #hr1, #hr2, #hr3 {
     border: 1px solid $color-light-menu4;
     background-image: linear-gradient(to right, $color-dark-menu4, $color-light-menu4);
+    margin-left: 40px;
 }
 #hr1b, #hr2b, #hr3b {
     border: 1px solid $color-light-menu4;
     background-image: linear-gradient(to left, $color-dark-menu4, $color-light-menu4);
+    margin-right: 40px;
 }
 /******* FIN LIGNES DE SEPARATION HR ********/
 

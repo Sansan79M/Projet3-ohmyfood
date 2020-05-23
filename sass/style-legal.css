@@ -1,35 +1,3 @@
-/******** PAGE ENTIERE ***********/
-#bloc-page {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin: 0;
-  width: 100%;
-}
-
-/******* MAIN *******/
-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-main h2 {
-  font-size: 2.5em;
-  color: black;
-  font-family: 'Noto Sans JP', sans-serif;
-  text-align: center;
-  margin-top: 45px;
-}
-
 /*******header********/
 header {
   background-color: seagreen;
@@ -62,9 +30,93 @@ header a:hover {
 @media all and (max-width: 900px) {
   header {
     height: 100px;
+    margin-left: 0;
+    margin-right: 0;
   }
-  header h1 {
+  h1 {
     font-size: 50px;
+  }
+}
+
+/******** PAGE ENTIERE ***********/
+#bloc-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+  width: 100%;
+}
+
+/******* MAIN *******/
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main h2 {
+  font-size: 2.5em;
+  color: black;
+  font-family: 'Noto Sans JP', sans-serif;
+  text-align: center;
+  margin-top: 45px;
+}
+
+/****** MEDIAS QUERIES BLOC-PAGE ******/
+@media all and (max-width: 900px) {
+  #bloc-page {
+    margin: 0;
+  }
+}
+
+/**********LEGAL***********/
+main {
+  margin-bottom: 80px;
+}
+
+#mentions {
+  margin: auto;
+  width: 80%;
+}
+
+#mentions h2 {
+  font-family: "Ubuntu", sans-serif;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  margin: 70px;
+  font-size: 40px;
+}
+
+#mentions h3 {
+  font-family: "Ubuntu", sans-serif;
+  color: black;
+  text-decoration: underline;
+}
+
+#mentions p {
+  font-family: "Ubuntu", sans-serif;
+  color: black;
+  text-align: justify;
+}
+
+/*******MEDIA QUERIES LEGAL*********/
+@media all and (max-width: 900px) {
+  #mentions {
+    margin-bottom: -60px;
+  }
+  #mentions h2 {
+    text-align: center;
+    font-size: 30px;
+    margin: 30px;
   }
 }
 
@@ -79,6 +131,7 @@ footer {
           justify-content: space-between;
   width: 100%;
   height: 110px;
+  margin: 0;
 }
 
 footer p {
@@ -136,49 +189,19 @@ footer p:hover {
 @media all and (max-width: 900px) {
   footer p {
     font-size: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
-/**********LEGAL***********/
-main {
-  margin-bottom: 80px;
-}
-
-#mentions {
-  margin: auto;
-  width: 80%;
-}
-
-#mentions h2 {
-  font-family: "Ubuntu", sans-serif;
-  color: black;
-  font-weight: bold;
-  text-align: center;
-  margin: 70px;
-  font-size: 40px;
-}
-
-#mentions h3 {
-  font-family: "Ubuntu", sans-serif;
-  color: black;
-  text-decoration: underline;
-}
-
-#mentions p {
-  font-family: "Ubuntu", sans-serif;
-  color: black;
-  text-align: justify;
-}
-
-/*******MEDIA QUERIES LEGAL*********/
-@media all and (max-width: 900px) {
-  #mentions {
-    margin-bottom: -60px;
+@media all and (max-width: 600px) {
+  footer {
+    z-index: 2;
+    position: fixed;
+    margin-top: 105px;
   }
-  #mentions h2 {
-    text-align: center;
-    font-size: 30px;
-    margin: 30px;
+  footer p {
+    font-size: 1.2em;
   }
 }
 /*# sourceMappingURL=style-legal.css.map */

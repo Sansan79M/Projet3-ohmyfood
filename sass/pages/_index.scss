@@ -1,4 +1,4 @@
-
+/********** INDEX ************/
 /********* BLOC MENUS ***********/
 #bloc-menus {
     display: flex;
@@ -8,6 +8,8 @@
     padding-top: 4%;
     padding-bottom: 4%
 }
+#bloc-menus a /*Liens des menus*/ 
+{text-decoration: none;}
 #card-line-1, #card-line-2 {
     display: flex;
     flex-direction: row;
@@ -28,49 +30,69 @@
     flex-direction: column;
     margin: auto;
 }
-.zoom:hover * {
-    animation: zoom;
-    transform: scale(1.15);
-}
-.zoom:hover {
-    opacity: 0.5;
-}
-
-#bloc-menus a /*Liens des menus*/ 
-{
-    text-decoration: none;
-}
 /********* FIN BLOC MENUS ***********/
 
 /************ DEBUT MENU 1 *************/
 #menu1 {
     background-color: $background-menu1;
     color: $color-text-menu1;
+    margin-right: 5px;
+    @include scale-opacity-start;
+    transition:all 3s;
+    &:hover {
+        opacity:0.5;
+    }
+ .card{
+    @include scale-opacity-start;
+    transition:all 3s;
+    &:hover  {
+        transform: scale(1.30) translateY(-70px);
+        opacity:0.6;
+}
 }
 .card #music1 {
     font-size:2em;
-}
-#menu1 .card-title {
+    }
+.card-title {
         font-family: $fontm1-title;
         font-size: 1em;
         margin-top: -30px;
         margin-bottom :-10px;
+        
     }
-#menu1 .card-name {
+.card-name {
         font-family: $fontm1-subtitle-p;
         font-size: 1.5em;
         font-weight: bold;
+      
     }
+}
 /************* FIN MENU 1 **************/
 
 /************ DEBUT MENU 2 *************/
 #menu2 {
     background-color: $background-menu2;
     font-family: $fontm2;
+    margin-left:5px;
+    @include scale-opacity-start;
+    transition:all 3s;
+    &:hover {
+        opacity:0.5;
+    }
+.card{
+    @include scale-opacity-start;
+    transition:all 3s;
+    &:hover  {
+        transform: scale(1.20) translateX(50px) perspective(300px) rotateY(30deg); 
+        transition-timing-function:cubic-bezier(.17,.67,0,1.05);
+        opacity:0.6;
+    }
+    }       
 .card-title{
         font-weight: bold;
         background: linear-gradient(to right, $color-text1-menu2, $color-text2-menu2, $color-text3-menu2);
         -webkit-background-clip: text;
+        background-clip: text;
         -webkit-text-fill-color: transparent;
         margin-bottom: -10px;
     }
@@ -84,11 +106,26 @@
 
 /************ DEBUT MENU 3 *************/
 #menu3 {
-    background-color: $background-card-menu3;   
+    background-color: $background-card-menu3;
+    margin-right: 5px; 
+    @include scale-opacity-start;
+    transition:all 1s;
+    &:hover {
+        opacity:0.5;
+    }
+.card{
+    @include scale-opacity-start;
+    transition:all 1s ease-out;
+    &:hover  {
+        transform: scaleY(1.8) translateY(10px);
+        opacity:0.6;
+}
+}  
 .card-title {
         font-family: $fontm3-title;
         background: linear-gradient(to right, $color-text1-menu3, $color-text2-menu3, $color-text3-menu3);
         -webkit-background-clip: text;
+        background-clip: text;
         -webkit-text-fill-color: transparent;
         font-size: 1.4em;
         margin-bottom: -10px;
@@ -105,11 +142,27 @@
 /************ DEBUT MENU 4 *************/
 #menu4 {
     background-color: $background-menu4;
+    margin-left:5px;
+    @include scale-opacity-start;
+    transition:all 3s;
+    &:hover {
+        opacity:0.5;
+    }
+.card{
+    @include scale-opacity-start;
+    transition:all 3s ease-out;
+    &:hover  {
+        transform: scale(1.35) translateY(10px) perspective(300px) rotateX(-35deg);
+        transition-timing-function:cubic-bezier(.42,.02,0,1.29);
+        opacity:0.7;
+}
+}
 .card-title{
         font-family: $fontm4;
         font-style: italic;
         background: linear-gradient(to right, $color-dark-menu4, $color-light-menu4);
         -webkit-background-clip: text;
+        background-clip: text;
         -webkit-text-fill-color: transparent;
         font-size: 1em;
         margin-bottom: -10px;
@@ -123,69 +176,25 @@
 }
 /************* FIN MENU 4 **************/
 
-/******* BULLE PROCHAINEMENT *******/
-#bubble {
-    width: 600px;
-    height: 80px;
-    margin-bottom: 50px;
-    border: 1px solid $background-h-f;
-    border-radius: 20px;
-    background-color: $background-h-f;
-    align-self: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-#info {
-    display: flex;
-    align-items: baseline;
-    align-self: center;
-}
-#prochainement {
-    color: $color-h-f;
-    font-family: $font-h-f;
-    font-size: 40px;
-    margin-left:70px;
-}
-#bloc-dots {
-    display: flex;
-    width: 70px;
-    margin-left: 7px;
-}
-.dot {
-    width: 12px;
-    height: 12px;
-    border-radius: 6px;
-    background-color: $color-h-f;
-    margin-left: 5px;
-    visibility: hidden;
-}
-/******** POINTS DE SUSPENSION ******/
-#bubble:hover #dot1 {
-    visibility: visible;
-    transition-delay: 0.2s;}
-#bubble:hover #dot2 {
-    visibility: visible;
-    transition-delay: 0.4s;}
-#bubble:hover #dot3 {
-    visibility: visible;
-    transition-delay: 0.6s; }
-/******* FIN BULLE PROCHAINEMENT *******/
+/********** FIN INDEX **************/
 
-/********* MEDIA QUERIES *******/
+/********* MEDIA QUERIES INDEX *******/
 @media all and (max-width: 900px) {
 
     #card-line-1, #card-line-2 {
         display: flex;
         flex-direction: column;  
         justify-content: space-between;
-        height:820px;
+        height:1050px;
+        width:600px;
+        justify-content: center;
     }
     
     #card-line-1 #menu1, #card-line-1 #menu2, 
     #card-line-2 #menu3, #card-line-2 #menu4
-    { width:300px;
-    height:400px;} 
+    { width:400px;
+    height:500px;
+    } 
 
     #menu1 .card-name, #menu1 .card-title, #menu1 .card #music1,
     #menu2 .card-name, #menu2 .card-title,
@@ -201,4 +210,10 @@
 }
 }
 }
-/********* FIN MEDIA QUERIES *******/
+@media all and (max-width: 600px) {
+    #card-line-1 #menu1, #card-line-1 #menu2, 
+    #card-line-2 #menu3, #card-line-2 #menu4
+    { width:300px;
+    height:400px;} 
+}
+/********* FIN MEDIA QUERIES INDEX *******/

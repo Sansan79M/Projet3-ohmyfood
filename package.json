@@ -10,9 +10,9 @@
     "menu2" : "sass --watch ./sass/style-menu2.scss:./sass/style-menu2.css",
     "menu3" : "sass --watch ./sass/style-menu3.scss:./sass/style-menu3.css",
     "menu4" : "sass --watch ./sass/style-menu4.scss:./sass/style-menu4.css"
-    
+
   },
   "author": "Sansan79M",
   "license": "ISC"
-  
+
 }
