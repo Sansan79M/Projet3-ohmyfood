@@ -49,10 +49,32 @@ justify-content: space-between; }
 //END LINES PARAGRAPHE/PRICE============
 
 
-//==OPACITY / SCALE START ZOOM==========
-
+//==ZOOM================================
+//background fade effect
+@mixin background-fade-effect
+{transition-property: opacity;
+    transition-duration: 3s;
+    &:hover {
+        opacity:0.5;
+    }
+}
+//Scale-opacity start card
 @mixin scale-opacity-start
 {transform:scale(1);
     opacity:1;}
 
-//==END OPACITY / SCALE START ZOOM======
+//text fade effect
+//@mixin text-fade-effect
+//{opacity:0.7;}    
+
+//==END ZOOM============================
+
+//==VISIBILITY HR MEDIA QUERIES=========
+
+@mixin hr-reduced
+{width:100px;}
+
+@mixin hr-hidden
+{visibility:hidden;}
+
+//==VISIBILITY HR MEDIA QUERIES=========

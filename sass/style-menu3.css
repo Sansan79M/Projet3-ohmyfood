@@ -48,7 +48,6 @@ header a:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 0;
-  width: 100%;
 }
 
 /******* MAIN *******/
@@ -211,7 +210,7 @@ hr {
 }
 
 /******* FIN LIGNES DE SEPARATION HR ********/
-/********* PARAGRAPHES *******/
+/********* PARAGRAPHES MENU 3 *******/
 #entree h4, #entree p {
   color: black;
 }
@@ -257,8 +256,8 @@ hr {
           justify-content: space-between;
 }
 
-/********* FIN PARAGRAPHES *******/
-/******* MEDIA QUERIES ********/
+/********* FIN PARAGRAPHES  *******/
+/******* MEDIA QUERIES MENU 3 ********/
 @media all and (max-width: 900px) {
   main {
     height: 55em;
@@ -271,12 +270,12 @@ hr {
     font-size: 2.5em;
   }
   .dish h4 {
-    font-size: 1.2em;
+    font-size: 1em;
     text-align: center;
     margin-top: -20px;
   }
   hr {
-    width: 25px;
+    width: 100px;
   }
   .paragraph p {
     font-size: 0.7em;
@@ -298,7 +297,13 @@ hr {
   }
 }
 
-/******* FIN MEDIA QUERIES ********/
+@media all and (max-width: 600px) {
+  hr {
+    visibility: hidden;
+  }
+}
+
+/******* FIN MEDIA QUERIES MENU 3 ********/
 /********* FOOTER **********/
 footer {
   display: -webkit-box;
@@ -310,7 +315,6 @@ footer {
           justify-content: space-between;
   width: 100%;
   height: 110px;
-  margin: 0;
 }
 
 footer p {
@@ -366,6 +370,11 @@ footer p:hover {
 
 /****** MEDIAS QUERIES FOOTER ******/
 @media all and (max-width: 900px) {
+  footer {
+    z-index: 2;
+    position: fixed;
+    margin-top: 100px;
+  }
   footer p {
     font-size: 1.5em;
     margin-left: auto;
@@ -374,11 +383,6 @@ footer p:hover {
 }
 
 @media all and (max-width: 600px) {
-  footer {
-    z-index: 2;
-    position: fixed;
-    margin-top: 105px;
-  }
   footer p {
     font-size: 1.2em;
   }

@@ -97,7 +97,7 @@ hr {
 }
 /******* FIN LIGNES DE SEPARATION HR ********/
 
-/********* PARAGRAPHES *******/
+/********* PARAGRAPHES MENU 3 *******/
 #entree h4, #entree p {
     color: $color-text-menu3;
 }
@@ -120,9 +120,9 @@ hr {
 }
 .price {padding-right: 80px;}
 .line {@include p-price-line;}
-/********* FIN PARAGRAPHES *******/
+/********* FIN PARAGRAPHES  *******/
 
-/******* MEDIA QUERIES ********/
+/******* MEDIA QUERIES MENU 3 ********/
 @media all and (max-width: 900px) {
 
     main
@@ -135,12 +135,12 @@ hr {
     {font-size: 2.5em;} 
     
     .dish h4
-    {font-size:1.2em;
+    {font-size:1em;
     text-align: center;
     margin-top:-20px;}
     
     hr
-    {width:25px;}
+    {@include hr-reduced;}
     
     .paragraph p
     {font-size:0.7em;
@@ -160,4 +160,8 @@ hr {
     {margin-top: -20px;}
     
     }
-/******* FIN MEDIA QUERIES ********/
+
+    @media all and (max-width: 600px) {
+        hr{@include hr-hidden;}
+        }    
+/******* FIN MEDIA QUERIES MENU 3 ********/

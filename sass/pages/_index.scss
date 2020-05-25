@@ -37,12 +37,9 @@
     background-color: $background-menu1;
     color: $color-text-menu1;
     margin-right: 5px;
-    @include scale-opacity-start;
-    transition:all 3s;
-    &:hover {
-        opacity:0.5;
-    }
- .card{
+    @include background-fade-effect;
+    
+.card{
     @include scale-opacity-start;
     transition:all 3s;
     &:hover  {
@@ -58,15 +55,14 @@
         font-size: 1em;
         margin-top: -30px;
         margin-bottom :-10px;
-        
     }
 .card-name {
         font-family: $fontm1-subtitle-p;
         font-size: 1.5em;
         font-weight: bold;
-      
     }
 }
+
 /************* FIN MENU 1 **************/
 
 /************ DEBUT MENU 2 *************/
@@ -74,18 +70,14 @@
     background-color: $background-menu2;
     font-family: $fontm2;
     margin-left:5px;
-    @include scale-opacity-start;
-    transition:all 3s;
-    &:hover {
-        opacity:0.5;
-    }
+    @include background-fade-effect;
 .card{
     @include scale-opacity-start;
     transition:all 3s;
     &:hover  {
         transform: scale(1.20) translateX(50px) perspective(300px) rotateY(30deg); 
         transition-timing-function:cubic-bezier(.17,.67,0,1.05);
-        opacity:0.6;
+        opacity:0.5;
     }
     }       
 .card-title{
@@ -107,18 +99,14 @@
 /************ DEBUT MENU 3 *************/
 #menu3 {
     background-color: $background-card-menu3;
-    margin-right: 5px; 
-    @include scale-opacity-start;
-    transition:all 1s;
-    &:hover {
-        opacity:0.5;
-    }
+    margin-right: 5px;
+    @include background-fade-effect;
 .card{
     @include scale-opacity-start;
-    transition:all 1s ease-out;
+    transition:transform 1.5s ease-out;
     &:hover  {
         transform: scaleY(1.8) translateY(10px);
-        opacity:0.6;
+        opacity:0.5;
 }
 }  
 .card-title {
@@ -143,11 +131,7 @@
 #menu4 {
     background-color: $background-menu4;
     margin-left:5px;
-    @include scale-opacity-start;
-    transition:all 3s;
-    &:hover {
-        opacity:0.5;
-    }
+    @include background-fade-effect;
 .card{
     @include scale-opacity-start;
     transition:all 3s ease-out;
@@ -187,7 +171,6 @@
         justify-content: space-between;
         height:1050px;
         width:600px;
-        justify-content: center;
     }
     
     #card-line-1 #menu1, #card-line-1 #menu2, 
@@ -200,15 +183,8 @@
     #menu2 .card-name, #menu2 .card-title,
     #menu3 .card-name, #menu3 .card-title,
     #menu4 .card-name, #menu4 .card-title
-    {font-size:0.8em}
+    {font-size:0.8em;}
  
-    #bubble {
-    width:300px;
-    margin-bottom:15px;
-    p{
-    font-size: 1.5em;
-}
-}
 }
 @media all and (max-width: 600px) {
     #card-line-1 #menu1, #card-line-1 #menu2, 
@@ -216,4 +192,4 @@
     { width:300px;
     height:400px;} 
 }
-/********* FIN MEDIA QUERIES INDEX *******/
+/*********** FIN MEDIA QUERIES INDEX *********/

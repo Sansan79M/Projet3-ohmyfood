@@ -121,7 +121,7 @@ hr {
 .line {@include p-price-line;}
 /********* FIN PARAGRAPHES *******/
 
-/******* MEDIA QUERIES ********/
+/******* MEDIA QUERIES MENU 2 ********/
 @media all and (max-width: 900px) {
 
     main
@@ -134,12 +134,12 @@ hr {
     {font-size: 2em;} 
     
     .dish h4
-    {font-size:2em;
+    {font-size:1.5em;
     text-align: center;
     margin-top:-20px;}
     
     hr
-    {width:25px;}
+    {@include hr-reduced;}
     
     .paragraph p
     {font-size:0.7em;
@@ -163,4 +163,8 @@ hr {
     {margin-top: 10px;}  
      
     }
-/******* FIN MEDIA QUERIES ********/
+
+    @media all and (max-width: 600px) {
+        hr{@include hr-hidden;}
+        }    
+/******* FIN MEDIA QUERIES MENU 2 ********/

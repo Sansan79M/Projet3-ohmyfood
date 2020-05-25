@@ -62,3 +62,14 @@
     animation-iteration-count : infinite;
 }
 /******* FIN BULLE PROCHAINEMENT*******/
+
+/********* MEDIA QUERIES BULLE *******/
+@media all and (max-width: 900px) {
+    #bubble {
+        width:300px;
+        margin-bottom:15px;
+        p{
+        font-size: 1.5em;
+    }
+}
+}

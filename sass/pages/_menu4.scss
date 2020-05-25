@@ -33,10 +33,10 @@ main { height: 1550px; }
     padding-top: 18px;
     padding-bottom: 15px;
 }
-    .plat p, .line p, .subtitle {
+.plat p, .line p, .subtitle {
         margin-top: 2px;
         margin-bottom: 10px;
-    }
+}
 /********* FIN LES 3 PARTIES DU MENU ********/
 
 /*********** SOUS-TITRES *************/
@@ -91,7 +91,7 @@ hr {
 .line {@include p-price-line;}
 /********* FIN PARAGRAPHES *******/
 
-/******* MEDIA QUERIES ********/
+/******* MEDIA QUERIES MENU 4 ********/
 @media all and (max-width: 900px) {
 
     main
@@ -104,12 +104,12 @@ hr {
     {font-size: 2em;} 
     
     .dish h4
-    {font-size:1.2em;
+    {font-size:1em;
     text-align: center;
     margin-top:-20px;}
     
     hr
-    {width:25px;}
+    {@include hr-reduced;}
     
     .paragraph p
     {font-size:0.7em;
@@ -126,4 +126,8 @@ hr {
     {margin-top: -20px;}  
     
     }
-/******* FIN MEDIA QUERIES ********/
+
+    @media all and (max-width: 600px) {
+        hr{@include hr-hidden;}
+        }    
+/******* FIN MEDIA QUERIES MENU 4********/
