@@ -1,5 +1,6 @@
 
 /******* CORPS DE LA PAGE 4 *******/
+body{@include margin-body;}
 main { height: 1550px; }
   
 /********** BLOC MENU *********/
@@ -22,7 +23,6 @@ main { height: 1550px; }
         font-style: italic;
         background: linear-gradient(to right, $color-dark-menu4, $color-light-menu4);
         -webkit-background-clip: text;
-        background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 }
@@ -92,13 +92,13 @@ hr {
 /********* FIN PARAGRAPHES *******/
 
 /******* MEDIA QUERIES MENU 4 ********/
+@media all and (max-width: 1200px) {
+    #bloc-menu{@include margin-bottom-bloc-menu;}
+}
 @media all and (max-width: 900px) {
 
     main
-    {height: 60em;
-    h2{ font-size: 1em;
-    margin-top:2px;}
-    }
+    {@include adjust-main;}
     
     #menu-title h2
     {font-size: 2em;} 

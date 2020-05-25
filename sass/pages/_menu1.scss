@@ -1,6 +1,8 @@
 
 /******* CORPS DE LA PAGE 1 *******/
-main { Height: 1630px; }
+body{@include margin-body;}
+main { Height: 1630px; 
+margin-bottom:110px;}
 
 /********** BLOC MENU *********/
 #bloc-menu {
@@ -96,13 +98,19 @@ hr {
 /**** FIN RAPPEL TITRE DE MENU *****/
 
 /******* MEDIA QUERIES MENU 1 ********/
+@media all and (max-width: 1200px) {
+    #bloc-menu{@include margin-bottom;}
+}
+
 @media all and (max-width: 900px) {
 
-main
-{height: 80em;
+main {margin-bottom:auto;
 h2{ font-size: 1em;
-margin-top:2px;}
+margin-top:2px;
 }
+}
+#bloc-menu{
+    margin-top:-80px;}
 
 #menu-title h2, #menu-title p
 {font-size: 2em;} 

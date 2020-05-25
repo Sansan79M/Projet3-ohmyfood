@@ -1,5 +1,10 @@
-//==BLOC-MENUS==========================
+//==BODY===============================
+@mixin margin-body
+{margin:0;}
 
+//==END BODY===========================
+
+//==BLOC-MENUS==========================
 //Shadow bloc-menus and cards
 @mixin shadow 
 {box-shadow:6px 6px 22px grey;}
@@ -13,21 +18,31 @@ padding-bottom: 35px;}
 @mixin align-bloc-menu
 {align-self: center;
 align-items: center;}
-
 //==END BLOC-MENUS======================
 
 
-//==MENU-TITLE==========================
+//==MARGIN MENUS========================
+@mixin menu-margin-right
+{margin-right: 30px;}
 
+@mixin menu-margin-left
+{margin-left: 30px;}
+//== END MARGIN MENUS===================
+
+
+//==MENUS SIZE ADJUSTEMENT MEDIA QUERIES=========
+@mixin menu-size-adjustment
+{max-width:100%;}
+//==END MENUS SIZE ADJUSTEMENT MEDIA QUERIES=====
+
+//==MENU-TITLE==========================
 //menu-title : center
 @mixin title-center
 {text-align: center;}
-
 //==END MENU-TITLE======================
 
 
 //==SUBTITLE============================
-
 @mixin subtitle-align
 {display: flex;
 align-items: baseline;
@@ -35,21 +50,29 @@ justify-content: space-between; }
 
 @mixin underline 
 {background-size: 100% 100%; }
-
 //END SUBTITLE==========================
 
 
 //==LINES PARAGRAPHE/PRICE==============
-
 @mixin p-price-line
 { display: flex;
     align-items: baseline;
     justify-content: space-between;}
-
 //END LINES PARAGRAPHE/PRICE============
 
 
-//==ZOOM================================
+//==VISIBILITY HR MEDIA QUERIES=========
+//MEDIA max-width 900px
+@mixin hr-reduced
+{width:100px;}
+
+//MEDIA max-width 600px
+@mixin hr-hidden
+{visibility:hidden;}
+//==VISIBILITY HR MEDIA QUERIES=========
+
+
+//==ZOOM MENUS==========================
 //background fade effect
 @mixin background-fade-effect
 {transition-property: opacity;
@@ -61,20 +84,17 @@ justify-content: space-between; }
 //Scale-opacity start card
 @mixin scale-opacity-start
 {transform:scale(1);
-    opacity:1;}
+    opacity:1;} 
+//==END ZOOM MENUS======================
 
-//text fade effect
-//@mixin text-fade-effect
-//{opacity:0.7;}    
+//==MARGIN BOTTOM BLOC-MENU WITH FOOTER===========
+@mixin margin-bottom-bloc-menu
+{margin-bottom:130px;}
+//==END MARGIN BOTTOM BLOC-MENU WITH FOOTER=======
 
-//==END ZOOM============================
-
-//==VISIBILITY HR MEDIA QUERIES=========
-
-@mixin hr-reduced
-{width:100px;}
-
-@mixin hr-hidden
-{visibility:hidden;}
-
-//==VISIBILITY HR MEDIA QUERIES=========
+//==MAIN + h2 MEDIA QUERIES MENUS 2-3-4=========
+@mixin adjust-main
+{height: 45em;
+h2{ font-size: 1em;
+margin-top:2px;}
+}

@@ -1,15 +1,25 @@
-/******** PAGE ENTIERE ***********/
+/******** BLOC-PAGE ***********/
 #bloc-page{
     display:flex;
     flex-direction: column;
     margin:0;
-    
+    width:100%;
     }
 
-   /******* MAIN *******/
+
+/****** MEDIAS QUERIES BLOC-PAGE ******/
+@media all and (max-width: 900px) {
+    #bloc-page{
+        margin:0;
+    }
+}
+/****** END MEDIAS QUERIES BLOC-PAGE ******/
+
+/********* MAIN *********/
 main {
     display: flex;
     flex-direction: column;
+    margin-bottom:110px;
    }
 main h2 {
     font-size: 2.5em;
@@ -18,9 +28,4 @@ main h2 {
     text-align: center;
     margin-top: 45px;
 } 
-/****** MEDIAS QUERIES BLOC-PAGE ******/
-@media all and (max-width: 900px) {
-    #bloc-page{
-        margin:0;
-    }
-}
+/********* END MAIN *********/

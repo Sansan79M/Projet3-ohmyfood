@@ -1,5 +1,6 @@
 
 /******* CORPS DE LA PAGE 3 *******/
+body{@include margin-body;}
 main { height: 1600px; }
 
 /********** BLOC MENU *********/
@@ -21,7 +22,6 @@ main { height: 1600px; }
         font-family: $fontm3-title;
         background: linear-gradient(to right, $color-text1-menu3, $color-text2-menu3, $color-text3-menu3);
         -webkit-background-clip: text;
-        background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 }
@@ -123,13 +123,14 @@ hr {
 /********* FIN PARAGRAPHES  *******/
 
 /******* MEDIA QUERIES MENU 3 ********/
+@media all and (max-width: 1200px) {
+    #bloc-menu{@include margin-bottom-bloc-menu;}
+}
+
 @media all and (max-width: 900px) {
 
     main
-    {height: 55em;
-    h2{ font-size: 1em;
-    margin-top:2px;}
-    }
+    {@include adjust-main;}
     
     #menu-title h2
     {font-size: 2.5em;} 
