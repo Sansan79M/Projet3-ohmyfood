@@ -99,7 +99,7 @@ hr {
 
 /******* MEDIA QUERIES MENU 1 ********/
 @media all and (max-width: 1200px) {
-    #bloc-menu{@include margin-bottom;}
+    #bloc-menu{@include margin-bottom-bloc-menu;}
 }
 
 @media all and (max-width: 900px) {

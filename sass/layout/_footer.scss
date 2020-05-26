@@ -9,10 +9,11 @@ footer {
     z-index: 2;
     position : fixed;
     bottom: 0;
+    margin:0; 
 }
     footer p {
         color: $color-h-f;
-        font-family: 'Roboto', sans-serif;
+        font-family: $font-h-f;
         text-align: center;
         padding: 5px;
         font-size: 35px;
@@ -47,14 +48,12 @@ footer p:hover {
 /****** MEDIAS QUERIES FOOTER ******/
 @media all and (max-width: 900px) {
 footer p{
-    font-size: 1.5em;
-    margin-left:auto;
-    margin-right:auto;
+font-size: 1.5em;
 }
 }
 @media all and (max-width: 600px) {
 footer p{
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 }
 /****** FIN MEDIAS QUERIES FOOTER ******/
