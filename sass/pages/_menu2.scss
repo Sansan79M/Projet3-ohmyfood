@@ -1,7 +1,7 @@
 
 /******* CORPS DE LA PAGE 2 *******/
 body{@include body-margin;}
-main { height: 1400px;}
+main {height: 1400px;}
 
 /********** BLOC MENU *********/
 #bloc-menu {
@@ -97,7 +97,7 @@ hr {
 }
 /******* FIN LIGNES DE SEPARATION HR ********/
 
-/********* PARAGRAPHES *******/
+/********* PARAGRAPHES MENU 2*******/
 #entree h4, #entree p{
     color: rgb(198, 116, 18);
 }
@@ -110,60 +110,42 @@ hr {
 .paragraph {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding-left: 75px;
-    margin: 2%;
+    justify-content: start;
     font-size:1.5em;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-family: 'Josefin Slab', serif;
+    font-family: $fontm2;
+    padding-right: 70px;
+    padding-left: 60px;
 }
-.price {padding-right: 80px;}
 .line {@include p-price-line;}
-/********* FIN PARAGRAPHES *******/
+/********* FIN PARAGRAPHES MENU 2*******/
 
 /******* MEDIA QUERIES MENU 2 ********/
 
 
 @media all and (max-width: 900px) {
-
     main
     {@include main-adjust;}
     
+    #bloc-menu
+    {margin-bottom:150px;}
+
     #menu-title h2
     {font-size: 2em;} 
     
     .dish h4
-    {font-size:1.5em;
+    {font-size:0.9em;
     text-align: center;
     margin-top:-20px;}
     
     hr
     {@include hr-reduced;}
     
-    .paragraph p
-    {font-size:0.7em;
-    margin-bottom:15px;}
-
-    #dessert .paragraph p
-    {margin-bottom:3px;}
-    
-    .price{margin-left:15px;}
-    
-    #entree .paragraph, #resistance .paragraph
-    {margin-left: -70px;
-    margin-right: -75px;
-    margin-top:-30px;}
-    
-    #dessert .paragraph
-    {margin-left: -70px;
-    margin-top:-30px;}
-
-    #resistance, #dessert
-    {margin-top: 10px;}  
-     
-    }
-
-    @media all and (max-width: 600px) {
-        hr{@include hr-hidden;}
-        }    
+    .paragraph{
+        font-size: 1em;
+        padding-right: 20px;
+        padding-left: 15px;}
+}
+@media all and (max-width: 600px) {
+    hr{@include hr-hidden;}
+}    
 /******* FIN MEDIA QUERIES MENU 2 ********/

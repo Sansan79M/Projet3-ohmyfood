@@ -1,7 +1,7 @@
 
 /******* CORPS DE LA PAGE 3 *******/
 body{@include body-margin;}
-main { height: 1600px; }
+main { height: 1400px; }
 
 /********** BLOC MENU *********/
 #bloc-menu {
@@ -101,66 +101,49 @@ hr {
 #entree h4, #entree p {
     color: $color-text-menu3;
 }
-
 #resistance h4, #resistance p {
     color: $color-text-menu3;
 }
-
 #dessert h4, #dessert p {
     color: $color-text-menu3;
 }
 .paragraph {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding-left: 75px;
-    margin: 2%;
-    font-family: 'Kalam', cursive;
+    justify-content: start;
     font-size:1.5em;
+    font-family: $fontm3-subtitle-p;
+    padding-right: 70px;
+    padding-left: 60px;
 }
-.price {padding-right: 80px;}
 .line {@include p-price-line;}
-/********* FIN PARAGRAPHES  *******/
+/********* FIN PARAGRAPHES MENU 3*******/
 
 /******* MEDIA QUERIES MENU 3 ********/
-
-
 @media all and (max-width: 900px) {
-
     main
     {@include main-adjust;}
     
+    #bloc-menu
+    {margin-bottom:150px;}
+
     #menu-title h2
     {font-size: 2.5em;} 
     
     .dish h4
-    {font-size:1em;
+    {font-size:0.8em;
     text-align: center;
     margin-top:-20px;}
     
     hr
     {@include hr-reduced;}
     
-    .paragraph p
-    {font-size:0.7em;
-    margin-bottom:15px;}
-
-    .price{margin-left:15px;}
-
-    #dessert .paragraph p
-    {margin-bottom:3px;}
-    
-    #entree .paragraph, #resistance .paragraph, #dessert .paragraph
-    {margin-left: -70px;
-    margin-right: -75px;
-    margin-top:-20px;}
-    
-    #resistance, #dessert
-    {margin-top: -20px;}
-    
-    }
-
-    @media all and (max-width: 600px) {
-        hr{@include hr-hidden;}
-        }    
+    .paragraph p{
+        font-size:0.7em;
+        padding-right: 20px;
+        padding-left: 15px;}
+}
+@media all and (max-width: 600px) {
+    hr{@include hr-hidden;}
+}    
 /******* FIN MEDIA QUERIES MENU 3 ********/

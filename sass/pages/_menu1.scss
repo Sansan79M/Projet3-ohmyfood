@@ -1,8 +1,9 @@
 
 /******* CORPS DE LA PAGE 1 *******/
 body{@include body-margin;}
-main { Height: 1630px; 
-margin-bottom:110px;}
+main { height: 1630px; 
+margin-bottom:110px;
+}
 
 /********** BLOC MENU *********/
 #bloc-menu {
@@ -72,12 +73,12 @@ hr {
 .paragraph {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding-left: 90px;
-    font-family: $fontm1-subtitle-p;
+    justify-content: start;
     font-size: 2em;
+    font-family: $fontm1-subtitle-p;
+    padding-right: 70px;
+    padding-left: 60px;
 }
-.price {padding-right: 100px;}
 .line {@include p-price-line;}
 /********* FIN PARAGRAPHES *******/
 
@@ -98,46 +99,35 @@ hr {
 /**** FIN RAPPEL TITRE DE MENU *****/
 
 /******* MEDIA QUERIES MENU 1 ********/
-
-
 @media all and (max-width: 900px) {
-
-main {margin-bottom:auto;
-h2{ font-size: 1em;
-margin-top:2px;
-}
-}
-#menu-title h2, #menu-title p
-{font-size: 2em;} 
-
-.dish h4
-{font-size:2em;
-text-align: center;
-margin-top:-20px;}
-
-hr
-{@include hr-reduced;}
-
-.paragraph p
-{font-size:0.7em;}
-
-.price{margin-left:15px;}
-
-#entree .paragraph, #resistance .paragraph
-{margin-left: -80px;
-margin-right: -90px;
-margin-top:-25px;}
-
-#dessert .paragraph
-{margin-left: -80px;
-margin-top:-25px;}
-
-#end-of-menu h3, #end-of-menu p
-{font-size:1.5em;}  
-
+    main {margin-bottom:auto;
+    h2{ font-size: 1em;
+    margin-top:2px;}
 }
 
+    #bloc-menu
+    {margin-bottom:150px;}
+
+    #menu-title h2, #menu-title p
+    {font-size: 2em;} 
+
+    .dish h4
+    {font-size:2em;
+    text-align: center;
+    margin-top:-20px;}
+
+    hr
+    {@include hr-reduced;}
+
+    .paragraph p
+    {font-size:0.7em;
+    padding-right: 20px;
+    padding-left: 15px;}
+
+    #end-of-menu h3, #end-of-menu p
+    {font-size:1.5em;}  
+}
 @media all and (max-width: 600px) {
-hr{@include hr-hidden;}
+    hr{@include hr-hidden;}
 }    
 /******* FIN MEDIA QUERIES MENU 1 ********/

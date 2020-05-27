@@ -115,7 +115,8 @@
 @media all and (max-width: 900px) {
   #bubble {
     width: 300px;
-    margin-bottom: 15px;
+    height: 60px;
+    margin-bottom: 100px;
   }
   #bubble p {
     font-size: 1.5em;
@@ -160,7 +161,7 @@ header a:hover {
     height: 100px;
   }
   h1 {
-    font-size: 50px;
+    font-size: 45px;
   }
 }
 
@@ -197,6 +198,7 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 110px;
+  margin: 0;
 }
 
 main h2 {
@@ -225,23 +227,17 @@ footer {
   z-index: 2;
   position: fixed;
   bottom: 0;
-  margin: 0;
-}
-
-footer p {
-  color: yellow;
-  font-family: "Roboto", sans-serif;
-  text-align: center;
-  padding: 5px;
-  font-size: 35px;
-  display: inline-block;
+  margin: auto;
 }
 
 footer a {
-  text-decoration: none;
   color: yellow;
-  padding-left: 15px;
-  padding-right: 15px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-size: 35px;
+  text-decoration: none;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 @-webkit-keyframes wiggle {
@@ -267,16 +263,13 @@ footer a {
 }
 
 footer a:hover {
-  color: blue;
-}
-
-footer p:hover {
   -webkit-animation-name: wiggle;
           animation-name: wiggle;
   -webkit-animation-duration: 150ms;
           animation-duration: 150ms;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
+  color: blue;
 }
 
 /****** MEDIAS QUERIES FOOTER ******/
@@ -290,7 +283,7 @@ footer p:hover {
 }
 
 @media all and (max-width: 600px) {
-  footer p {
+  footer a {
     font-size: 1.3em;
   }
 }
@@ -577,7 +570,6 @@ body {
         -ms-flex-align: center;
             align-items: center;
     height: 1050px;
-    width: 600px;
   }
   #menu1, #menu3 {
     margin-bottom: 20px;

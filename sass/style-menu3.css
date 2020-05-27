@@ -36,7 +36,7 @@ header a:hover {
     height: 100px;
   }
   h1 {
-    font-size: 50px;
+    font-size: 45px;
   }
 }
 
@@ -73,6 +73,7 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 110px;
+  margin: 0;
 }
 
 main h2 {
@@ -90,7 +91,7 @@ body {
 }
 
 main {
-  height: 1600px;
+  height: 1400px;
 }
 
 /********** BLOC MENU *********/
@@ -242,17 +243,13 @@ hr {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-left: 75px;
-  margin: 2%;
-  font-family: 'Kalam', cursive;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   font-size: 1.5em;
-}
-
-.price {
-  padding-right: 80px;
+  font-family: "Kalam", cursive;
+  padding-right: 70px;
+  padding-left: 60px;
 }
 
 .line {
@@ -267,7 +264,7 @@ hr {
           justify-content: space-between;
 }
 
-/********* FIN PARAGRAPHES  *******/
+/********* FIN PARAGRAPHES MENU 3*******/
 /******* MEDIA QUERIES MENU 3 ********/
 @media all and (max-width: 900px) {
   main {
@@ -277,11 +274,14 @@ hr {
     font-size: 1em;
     margin-top: 2px;
   }
+  #bloc-menu {
+    margin-bottom: 150px;
+  }
   #menu-title h2 {
     font-size: 2.5em;
   }
   .dish h4 {
-    font-size: 1em;
+    font-size: 0.8em;
     text-align: center;
     margin-top: -20px;
   }
@@ -290,21 +290,8 @@ hr {
   }
   .paragraph p {
     font-size: 0.7em;
-    margin-bottom: 15px;
-  }
-  .price {
-    margin-left: 15px;
-  }
-  #dessert .paragraph p {
-    margin-bottom: 3px;
-  }
-  #entree .paragraph, #resistance .paragraph, #dessert .paragraph {
-    margin-left: -70px;
-    margin-right: -75px;
-    margin-top: -20px;
-  }
-  #resistance, #dessert {
-    margin-top: -20px;
+    padding-right: 20px;
+    padding-left: 15px;
   }
 }
 
@@ -332,23 +319,17 @@ footer {
   z-index: 2;
   position: fixed;
   bottom: 0;
-  margin: 0;
-}
-
-footer p {
-  color: yellow;
-  font-family: "Roboto", sans-serif;
-  text-align: center;
-  padding: 5px;
-  font-size: 35px;
-  display: inline-block;
+  margin: auto;
 }
 
 footer a {
-  text-decoration: none;
   color: yellow;
-  padding-left: 15px;
-  padding-right: 15px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-size: 35px;
+  text-decoration: none;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 @-webkit-keyframes wiggle {
@@ -374,16 +355,13 @@ footer a {
 }
 
 footer a:hover {
-  color: blue;
-}
-
-footer p:hover {
   -webkit-animation-name: wiggle;
           animation-name: wiggle;
   -webkit-animation-duration: 150ms;
           animation-duration: 150ms;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
+  color: blue;
 }
 
 /****** MEDIAS QUERIES FOOTER ******/
@@ -397,7 +375,7 @@ footer p:hover {
 }
 
 @media all and (max-width: 600px) {
-  footer p {
+  footer a {
     font-size: 1.3em;
   }
 }

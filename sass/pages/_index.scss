@@ -170,13 +170,12 @@ body{@include body-margin;}
     {font-size:0.8em;}
     }
     
-    @media all and (max-width: 900px) {
+@media all and (max-width: 900px) {
     #card-line-1, #card-line-2 {
             display: flex;
             flex-direction: column;  
             align-items: center;
             height:1050px;
-            width:600px;
         }
     #menu1, #menu3 {
         margin-bottom: 20px;
@@ -197,16 +196,15 @@ body{@include body-margin;}
     }
     .card
     {font-size:1em;}
-    }
-    
-    @media all and (max-width: 600px) {
+}  
+@media all and (max-width: 600px) {
     #bloc-menus{
         margin-bottom: -180px; 
     aside
     { width:300px;
     height:400px;}
     }
-    #card-line-1{margin-bottom: -85px;}
+    #card-line-1 {margin-bottom: -85px;}
     #card-line-2 {margin-top: -85px;}
     .card
     {font-size:0.6em;}

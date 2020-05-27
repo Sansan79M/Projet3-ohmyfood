@@ -1,7 +1,7 @@
 
 /******* CORPS DE LA PAGE 4 *******/
 body{@include body-margin;}
-main { height: 1550px; }
+main {height: 1550px;}
   
 /********** BLOC MENU *********/
 #bloc-menu {
@@ -79,25 +79,27 @@ hr {
 .paragraph {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding-left: 75px;
-    margin: 2%;
-    color: $color-text-menu4;
+    justify-content: start;
+    font-size: 1.5em;
     font-family: $fontm4;
     font-style: italic;
-    font-size: 1.5em;
+    color: $color-text-menu4;
+    padding-right: 70px;
+    padding-left: 60px;
+    
 }
-.price {padding-right: 80px;}
 .line {@include p-price-line;}
 /********* FIN PARAGRAPHES *******/
 
 /******* MEDIA QUERIES MENU 4 ********/
 
 @media all and (max-width: 900px) {
-
     main
     {@include main-adjust;}
     
+    #bloc-menu
+    {margin-bottom:150px;}
+
     #menu-title h2
     {font-size: 2em;} 
     
@@ -109,23 +111,12 @@ hr {
     hr
     {@include hr-reduced;}
     
-    .paragraph p
-    {font-size:0.7em;
-    margin-bottom:15px;}
-
-    .price{margin-left:15px;}
-  
-    #entree .paragraph, #resistance .paragraph, #dessert .paragraph
-    {margin-left: -70px;
-    margin-right: -75px;
-    margin-top:-20px;}
-    
-    #resistance, #dessert
-    {margin-top: -20px;}  
-    
-    }
-
-    @media all and (max-width: 600px) {
-        hr{@include hr-hidden;}
-        }    
+    .paragraph p{
+        font-size:0.7em;
+        padding-right: 20px;
+        padding-left: 15px;}
+}
+@media all and (max-width: 600px) {
+    hr{@include hr-hidden;}
+}    
 /******* FIN MEDIA QUERIES MENU 4********/
