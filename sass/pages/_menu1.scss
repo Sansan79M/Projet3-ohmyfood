@@ -1,6 +1,6 @@
 
 /******* CORPS DE LA PAGE 1 *******/
-body{@include margin-body;}
+body{@include body-margin;}
 main { Height: 1630px; 
 margin-bottom:110px;}
 
@@ -8,7 +8,7 @@ margin-bottom:110px;}
 #bloc-menu {
     width: $width-b-m;
     background-color: $background-menu1;
-    @include align-bloc-menu;
+    @include bloc-menu-align;
     @include shadow;
     color: $color-text-menu1;
 }
@@ -98,9 +98,7 @@ hr {
 /**** FIN RAPPEL TITRE DE MENU *****/
 
 /******* MEDIA QUERIES MENU 1 ********/
-@media all and (max-width: 1200px) {
-    #bloc-menu{@include margin-bottom-bloc-menu;}
-}
+
 
 @media all and (max-width: 900px) {
 
@@ -109,9 +107,6 @@ h2{ font-size: 1em;
 margin-top:2px;
 }
 }
-#bloc-menu{
-    margin-top:-80px;}
-
 #menu-title h2, #menu-title p
 {font-size: 2em;} 
 

@@ -1,14 +1,14 @@
 
 /******* CORPS DE LA PAGE 2 *******/
-body{@include margin-body;}
+body{@include body-margin;}
 main { height: 1400px;}
 
 /********** BLOC MENU *********/
 #bloc-menu {
     width: $width-b-m;
     background-color: $background-menu2;
-    @include padding-bloc-menus ;
-    @include align-bloc-menu;
+    @include bloc-menus-padding ;
+    @include bloc-menu-align;
     @include shadow;
 }
 
@@ -122,14 +122,12 @@ hr {
 /********* FIN PARAGRAPHES *******/
 
 /******* MEDIA QUERIES MENU 2 ********/
-@media all and (max-width: 1200px) {
-    #bloc-menu{@include margin-bottom-bloc-menu;}
-}
+
 
 @media all and (max-width: 900px) {
 
     main
-    {@include adjust-main;}
+    {@include main-adjust;}
     
     #menu-title h2
     {font-size: 2em;} 

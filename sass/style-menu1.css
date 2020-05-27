@@ -249,12 +249,6 @@ hr {
 
 /**** FIN RAPPEL TITRE DE MENU *****/
 /******* MEDIA QUERIES MENU 1 ********/
-@media all and (max-width: 1200px) {
-  #bloc-menu {
-    margin-bottom: 130px;
-  }
-}
-
 @media all and (max-width: 900px) {
   main {
     margin-bottom: auto;
@@ -262,9 +256,6 @@ hr {
   main h2 {
     font-size: 1em;
     margin-top: 2px;
-  }
-  #bloc-menu {
-    margin-top: -80px;
   }
   #menu-title h2, #menu-title p {
     font-size: 2em;
@@ -377,6 +368,9 @@ footer p:hover {
 
 /****** MEDIAS QUERIES FOOTER ******/
 @media all and (max-width: 900px) {
+  footer {
+    height: 80px;
+  }
   footer p {
     font-size: 1.5em;
   }

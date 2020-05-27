@@ -232,12 +232,6 @@ hr {
 
 /********* FIN PARAGRAPHES *******/
 /******* MEDIA QUERIES MENU 4 ********/
-@media all and (max-width: 1200px) {
-  #bloc-menu {
-    margin-bottom: 130px;
-  }
-}
-
 @media all and (max-width: 900px) {
   main {
     height: 45em;
@@ -354,6 +348,9 @@ footer p:hover {
 
 /****** MEDIAS QUERIES FOOTER ******/
 @media all and (max-width: 900px) {
+  footer {
+    height: 80px;
+  }
   footer p {
     font-size: 1.5em;
   }

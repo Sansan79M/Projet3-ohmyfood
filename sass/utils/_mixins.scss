@@ -1,78 +1,46 @@
-//==BODY===============================
-@mixin margin-body
+//==BODY======================================
+@mixin body-margin
 {margin:0;}
 
-//==END BODY===========================
 
-//==BLOC-MENUS==========================
-//Shadow bloc-menus and cards
+//==MAIN======================================
+//main + h2 media queries menus 2-3-4
+@mixin main-adjust
+{height: 45em;
+h2{ font-size: 1em;
+margin-top:2px;
+}
+}
+
+
+//==BLOC-MENU================================
+//bloc-menu and cards : shadow
 @mixin shadow 
 {box-shadow:6px 6px 22px grey;}
 
-//padding : bloc-menu
-@mixin padding-bloc-menus 
+//bloc-menu : padding
+@mixin bloc-menus-padding 
 {padding-top: 20px;
 padding-bottom: 35px;}
 
-//align center : bloc-menu
-@mixin align-bloc-menu
+//bloc-menu : align center
+@mixin bloc-menu-align
 {align-self: center;
 align-items: center;}
-//==END BLOC-MENUS======================
 
 
-//==MARGIN MENUS========================
+//==MENUS=====================================
 @mixin menu-margin-right
 {margin-right: 30px;}
 
 @mixin menu-margin-left
 {margin-left: 30px;}
-//== END MARGIN MENUS===================
 
-
-//==MENUS SIZE ADJUSTEMENT MEDIA QUERIES=========
-@mixin menu-size-adjustment
-{max-width:100%;}
-//==END MENUS SIZE ADJUSTEMENT MEDIA QUERIES=====
-
-//==MENU-TITLE==========================
 //menu-title : center
 @mixin title-center
 {text-align: center;}
-//==END MENU-TITLE======================
 
-
-//==SUBTITLE============================
-@mixin subtitle-align
-{display: flex;
-align-items: baseline;
-justify-content: space-between; }
-
-@mixin underline 
-{background-size: 100% 100%; }
-//END SUBTITLE==========================
-
-
-//==LINES PARAGRAPHE/PRICE==============
-@mixin p-price-line
-{ display: flex;
-    align-items: baseline;
-    justify-content: space-between;}
-//END LINES PARAGRAPHE/PRICE============
-
-
-//==VISIBILITY HR MEDIA QUERIES=========
-//MEDIA max-width 900px
-@mixin hr-reduced
-{width:100px;}
-
-//MEDIA max-width 600px
-@mixin hr-hidden
-{visibility:hidden;}
-//==VISIBILITY HR MEDIA QUERIES=========
-
-
-//==ZOOM MENUS==========================
+//==Menus zoom==
 //background fade effect
 @mixin background-fade-effect
 {transition-property: opacity;
@@ -81,20 +49,41 @@ justify-content: space-between; }
         opacity:0.5;
     }
 }
-//Scale-opacity start card
+//Card : scale-opacity start 
 @mixin scale-opacity-start
 {transform:scale(1);
     opacity:1;} 
-//==END ZOOM MENUS======================
+//==End menus zoom==
 
-//==MARGIN BOTTOM BLOC-MENU WITH FOOTER===========
-@mixin margin-bottom-bloc-menu
-{margin-bottom:130px;}
-//==END MARGIN BOTTOM BLOC-MENU WITH FOOTER=======
+//menus : size adjustement media queries
+@mixin menu-size-adjustment
+{max-width:100%;}
 
-//==MAIN + h2 MEDIA QUERIES MENUS 2-3-4=========
-@mixin adjust-main
-{height: 45em;
-h2{ font-size: 1em;
-margin-top:2px;}
-}
+
+//==SUBTITLE==================================
+@mixin subtitle-align
+{display: flex;
+align-items: baseline;
+justify-content: space-between; }
+
+@mixin underline 
+{background-size: 100% 100%; }
+
+
+//==LINES PARAGRAPHE/PRICE====================
+@mixin p-price-line
+{ display: flex;
+    align-items: baseline;
+    justify-content: space-between;}
+
+
+//==HR =======================================
+//width et visibility media queries
+//MEDIA max-width 900px
+@mixin hr-reduced
+{width:100px;}
+
+//MEDIA max-width 600px
+@mixin hr-hidden
+{visibility:hidden;}
+

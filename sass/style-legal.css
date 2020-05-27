@@ -85,6 +85,10 @@ main h2 {
 
 /********* END MAIN *********/
 /**********LEGAL***********/
+body {
+  margin: 0;
+}
+
 main {
   margin-bottom: 190px;
 }
@@ -200,6 +204,9 @@ footer p:hover {
 
 /****** MEDIAS QUERIES FOOTER ******/
 @media all and (max-width: 900px) {
+  footer {
+    height: 80px;
+  }
   footer p {
     font-size: 1.5em;
   }
