@@ -1,10 +1,16 @@
+//==COLORS====================================
+
 //Colors : header - footer - bubble
-$background-h-f: seagreen;
-$color-h-f: yellow;
-$color-hover-h:blue;
+$background-h-f: rgb(87, 156, 135);
+$color-h-f: rgb(253, 203, 70);
+$color-hover-h: rgb(0, 0, 255);
 
 //Colors : legal - main h2
 $color-text: black;
+
+//Colors  : music note
+$first-color-note:rgb(241, 95, 98);
+$second-color-note:rgb(246, 145, 106);
 
 //Colors : menu 1
 $background-menu1: rgb(252, 223, 219);
@@ -30,5 +36,24 @@ $color-text-menu4: black;
 $color-light-menu4: rgb(190, 255, 127);
 $color-dark-menu4: rgb(61, 146, 58);
 
+//==END COLORS===============================
+
+
+//==SIZES====================================
+
+//Body
+$body-margin:0;
+
 //Width bloc-menus
 $width-b-m:80%;
+
+//Menus 1-3
+$menu-margin-right:30px;
+
+//Menus 2-4
+$menu-margin-left:30px;
+
+//HR : media queries max-width 900px
+$hr-reduced:120px;
+
+//== END SIZES================================

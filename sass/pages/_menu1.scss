@@ -1,6 +1,5 @@
-
 /******* BLOC PAGE 1 *******/
-body{@include body-margin;}
+body{margin:$body-margin;}
 main { height: 1630px; 
 margin-bottom:110px;
 }
@@ -121,8 +120,7 @@ hr {
     text-align: center;
     margin-top:-20px;}
 
-    hr
-    {@include hr-reduced;}
+    hr{width:$hr-reduced;}
 
     .paragraph {
     font-size:1.3em;

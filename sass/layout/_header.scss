@@ -22,13 +22,14 @@ header a {
 header a:hover{
     color: $color-hover-h;
 }
+/******* END HEADER ********/
 
-/****** MEDIA QUERIES HEADER ******/
+
+/****** HEADER MEDIA QUERIES ******/
 @media all and (max-width: 900px) {
     header
     {height:100px;}
     h1
     {font-size:45px;}
 }
-/****** END MEDIA QUERIES HEADER ******/
-/******** END HEADER ********/
+/****** END HEADER MEDIA QUERIES ******/

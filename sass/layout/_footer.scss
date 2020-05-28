@@ -1,4 +1,4 @@
-/********* FOOTER **********/
+/*********** FOOTER ************/
 footer {
     display: flex;
     background-color: $background-h-f;
@@ -35,13 +35,12 @@ footer a:hover {
     animation-iteration-count: infinite;
     color: $color-hover-h;
 }
-
+/********** END FOOTER **********/
 
 /****** MEDIAS QUERIES FOOTER ******/
 @media all and (max-width: 900px) {
-footer {height:80px;}
-    footer p{
-font-size: 1.5em;
+footer {height:70px;
+        a{font-size: 1.5em;}
 }
 }
 @media all and (max-width: 600px) {
@@ -49,4 +48,4 @@ footer a{
     font-size: 1.3em;
 }
 }
-/****** FIN MEDIAS QUERIES FOOTER ******/
+/****** END MEDIAS QUERIES FOOTER ******/

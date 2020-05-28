@@ -1,8 +1,8 @@
-
 /******* BLOC PAGE 4 *******/
-body{@include body-margin;}
+body{margin:$body-margin;}
 main {height: 1550px;}
   
+
 /********** BLOC MENU 4 *********/
 #bloc-menu {
     width: $width-b-m;
@@ -11,6 +11,7 @@ main {height: 1550px;}
     @include bloc-menu-align;
     @include shadow;
 }
+
 
 /******* TITLE MENU 4 ******/
 #menu-title {
@@ -27,6 +28,7 @@ main {height: 1550px;}
     }
 }
 /******* END TITLE MENU 4 ******/ 
+
 
 /********* THE 3 PARTS OF THE MENU 4 ********/
 .dish {
@@ -79,6 +81,7 @@ hr {
 }
 /*********** END HR SEPARATION LINE 4 **************/
 
+
 /********* PARAGRAPH MENU 4 *******/
 .paragraph {
     display: flex;
@@ -94,6 +97,7 @@ hr {
 }
 .line {@include p-price-line;}
 /********* END PARAGRAPH MENU 4 *******/
+
 
 /******* MEDIA QUERIES MENU 4 ********/
 
@@ -111,7 +115,7 @@ hr {
     text-align: center;
     margin-top:-15px;}
     
-    hr {@include hr-reduced;}
+    hr{width:$hr-reduced;}
     
     .paragraph {
         font-size:1.1em;
