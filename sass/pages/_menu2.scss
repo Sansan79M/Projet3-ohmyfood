@@ -1,7 +1,7 @@
 
 /******* CORPS DE LA PAGE 2 *******/
 body{@include body-margin;}
-main {height: 1400px;}
+main {height: 1450px;}
 
 /********** BLOC MENU *********/
 #bloc-menu {
@@ -125,15 +125,12 @@ hr {
 @media all and (max-width: 900px) {
     main
     {@include main-adjust;}
-    
-    #bloc-menu
-    {margin-bottom:150px;}
 
     #menu-title h2
     {font-size: 2em;} 
     
     .dish h4
-    {font-size:0.9em;
+    {font-size:1.2em;
     text-align: center;
     margin-top:-20px;}
     
@@ -142,10 +139,12 @@ hr {
     
     .paragraph{
         font-size: 1em;
-        padding-right: 20px;
-        padding-left: 15px;}
+        padding-right: 10px;
+        padding-left: 15px;
+        margin-top:-20px;}
 }
 @media all and (max-width: 600px) {
-    hr{@include hr-hidden;}
+    hr{@include hr-remove;}
+    .subtitle{@include subtitle-center;}
 }    
 /******* FIN MEDIA QUERIES MENU 2 ********/

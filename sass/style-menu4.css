@@ -231,14 +231,11 @@ hr {
 /******* MEDIA QUERIES MENU 4 ********/
 @media all and (max-width: 900px) {
   main {
-    height: 45em;
+    height: 55em;
   }
   main h2 {
     font-size: 1em;
     margin-top: 2px;
-  }
-  #bloc-menu {
-    margin-bottom: 150px;
   }
   #menu-title h2 {
     font-size: 2em;
@@ -260,7 +257,12 @@ hr {
 
 @media all and (max-width: 600px) {
   hr {
-    visibility: hidden;
+    display: none;
+  }
+  .subtitle {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 

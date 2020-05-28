@@ -104,10 +104,6 @@ hr {
     h2{ font-size: 1em;
     margin-top:2px;}
 }
-
-    #bloc-menu
-    {margin-bottom:150px;}
-
     #menu-title h2, #menu-title p
     {font-size: 2em;} 
 
@@ -128,6 +124,7 @@ hr {
     {font-size:1.5em;}  
 }
 @media all and (max-width: 600px) {
-    hr{@include hr-hidden;}
+    hr{@include hr-remove;}
+    .subtitle{@include subtitle-center;}
 }    
 /******* FIN MEDIA QUERIES MENU 1 ********/

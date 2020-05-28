@@ -97,9 +97,6 @@ hr {
     main
     {@include main-adjust;}
     
-    #bloc-menu
-    {margin-bottom:150px;}
-
     #menu-title h2
     {font-size: 2em;} 
     
@@ -117,6 +114,7 @@ hr {
         padding-left: 15px;}
 }
 @media all and (max-width: 600px) {
-    hr{@include hr-hidden;}
+    hr{@include hr-remove;}
+    .subtitle{@include subtitle-center;}
 }    
 /******* FIN MEDIA QUERIES MENU 4********/

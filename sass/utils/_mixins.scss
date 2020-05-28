@@ -6,7 +6,7 @@
 //==MAIN======================================
 //main + h2 media queries menus 2-3-4
 @mixin main-adjust
-{height: 45em;
+{height: 55em;
 h2{ font-size: 1em;
 margin-top:2px;
 }
@@ -69,6 +69,10 @@ justify-content: space-between; }
 @mixin underline 
 {background-size: 100% 100%; }
 
+//MEDIA max-width 600px
+@mixin subtitle-center
+{justify-content: center;}
+
 
 //==LINES PARAGRAPHE/PRICE====================
 @mixin p-price-line
@@ -84,6 +88,6 @@ justify-content: space-between; }
 {width:100px;}
 
 //MEDIA max-width 600px
-@mixin hr-hidden
-{visibility:hidden;}
+@mixin hr-remove
+{display: none;}
 

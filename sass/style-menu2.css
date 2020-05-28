@@ -91,7 +91,7 @@ body {
 }
 
 main {
-  height: 1400px;
+  height: 1450px;
 }
 
 /********** BLOC MENU *********/
@@ -268,20 +268,17 @@ hr {
 /******* MEDIA QUERIES MENU 2 ********/
 @media all and (max-width: 900px) {
   main {
-    height: 45em;
+    height: 55em;
   }
   main h2 {
     font-size: 1em;
     margin-top: 2px;
   }
-  #bloc-menu {
-    margin-bottom: 150px;
-  }
   #menu-title h2 {
     font-size: 2em;
   }
   .dish h4 {
-    font-size: 0.9em;
+    font-size: 1.2em;
     text-align: center;
     margin-top: -20px;
   }
@@ -290,14 +287,20 @@ hr {
   }
   .paragraph {
     font-size: 1em;
-    padding-right: 20px;
+    padding-right: 10px;
     padding-left: 15px;
+    margin-top: -20px;
   }
 }
 
 @media all and (max-width: 600px) {
   hr {
-    visibility: hidden;
+    display: none;
+  }
+  .subtitle {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
