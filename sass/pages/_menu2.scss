@@ -1,9 +1,10 @@
 
-/******* CORPS DE LA PAGE 2 *******/
+/******* BLOC PAGE 2 *******/
 body{@include body-margin;}
 main {height: 1450px;}
 
-/********** BLOC MENU *********/
+
+/********** BLOC MENU 2 *********/
 #bloc-menu {
     width: $width-b-m;
     background-color: $background-menu2;
@@ -12,7 +13,8 @@ main {height: 1450px;}
     @include shadow;
 }
 
-/******* TITRE MENU ******/
+
+/******* TITLE MENU 2 ******/
 #menu-title {
     @include title-center;
     margin-bottom: 30px;
@@ -20,14 +22,15 @@ main {height: 1450px;}
         font-size: 4em;
         font-family: $fontm2;
         font-weight: bold;
-        background: linear-gradient(to right, rgb(198, 116, 18), rgb(165, 103, 153), rgb(110, 76, 204));
+        background: linear-gradient(to right, $color-text1-menu2, $color-text2-menu2, $color-text3-menu2);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 }
-/******* FIN TITRE MENU ******/
+/******* END TITLE MENU ******/
 
-/********* LES 3 PARTIES DU MENU ********/
+
+/********* THE 3 PARTS OF THE MENU 2 ********/
 .dish {
     padding-top: 18px;
     padding-bottom: 15px;
@@ -36,16 +39,16 @@ main {height: 1450px;}
         margin-top: 2px;
         margin-bottom: 10px;
     }
-/********* FIN LES 3 PARTIES DU MENU ********/
+/********* END THE 3 PARTS OF THE MENU 2 ********/
 
-/*********** SOUS-TITRES *************/
+
+/*********** SUBTITLE MENU 2 *************/
 .subtitle {@include subtitle-align;
     margin-left: 40px;
     margin-right: 40px; 
 h4 {
     font-size: 2em;
-    font-family: $fontm2;
-}
+    font-family: $fontm2;}
 }
 #entree h4 {
     background: linear-gradient(to top, $color-text1-menu2 0%, $color-text1-menu2 2px, transparent 2px) no-repeat left bottom / 0 100%;
@@ -61,9 +64,10 @@ h4 {
 }
 #entree h4:hover, #resistance h4:hover, #dessert h4:hover 
 {@include underline;}
-/*********** FIN SOUS-TITRES *************/
+/*********** END SUBTITLE MENU 2 *************/
 
-/******* LIGNES DE SEPARATION HR ********/
+
+/******* HR SEPARATION LINE 2 ********/
 hr {
     width: 280px;
     height: 5px;
@@ -95,17 +99,18 @@ hr {
     border: 1px solid $color-text3-menu2;
     background-color: $color-text3-menu2;
 }
-/******* FIN LIGNES DE SEPARATION HR ********/
+/*********** END HR SEPARATION LINE 2 **************/
 
-/********* PARAGRAPHES MENU 2*******/
+
+/********* PARAGRAPH MENU 2*******/
 #entree h4, #entree p{
-    color: rgb(198, 116, 18);
+    color: $color-text1-menu2;
 }
 #resistance h4, #resistance p {
-    color: rgb(165, 103, 153);
+    color: $color-text2-menu2;
 }
 #dessert h4, #dessert p {
-    color: rgb(110, 76, 204);
+    color: $color-text3-menu2;
 }
 .paragraph {
     display: flex;
@@ -117,14 +122,15 @@ hr {
     padding-left: 60px;
 }
 .line {@include p-price-line;}
-/********* FIN PARAGRAPHES MENU 2*******/
+/********* END PARAGRAPH MENU 2*******/
+
 
 /******* MEDIA QUERIES MENU 2 ********/
-
-
 @media all and (max-width: 900px) {
     main
-    {@include main-adjust;}
+    {height: 55em;
+    h2 {@include h2-main-adjust;}
+    }
 
     #menu-title h2
     {font-size: 2em;} 
@@ -142,9 +148,10 @@ hr {
         padding-right: 10px;
         padding-left: 15px;
         margin-top:-20px;}
-}
+    }
+
 @media all and (max-width: 600px) {
     hr{@include hr-remove;}
     .subtitle{@include subtitle-center;}
 }    
-/******* FIN MEDIA QUERIES MENU 2 ********/
+/******* END MEDIA QUERIES MENU 2 ********/

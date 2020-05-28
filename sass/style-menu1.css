@@ -93,7 +93,7 @@ main h2 {
   -webkit-text-fill-color: transparent;
 }
 
-/******* CORPS DE LA PAGE 1 *******/
+/******* BLOC PAGE 1 *******/
 body {
   margin: 0;
 }
@@ -103,7 +103,7 @@ main {
   margin-bottom: 110px;
 }
 
-/********** BLOC MENU *********/
+/********** BLOC MENU 1 *********/
 #bloc-menu {
   width: 80%;
   background-color: #fcdfdb;
@@ -118,7 +118,7 @@ main {
   color: #3d1319;
 }
 
-/******* ICONE ET TITRE MENU ******/
+/******* ICON AND TITLE MENU 1 ******/
 #menu-title {
   text-align: center;
   margin-bottom: 30px;
@@ -137,8 +137,8 @@ main {
   margin-bottom: -15px;
 }
 
-/******* FIN ICONE ET TITRE MENU ******/
-/********* LES 3 PARTIES DU MENU ********/
+/******* END ICON AND TITLE MENU 1 ******/
+/********* THE 3 PARTS OF THE MENU 1 ********/
 .dish {
   padding-top: 25px;
 }
@@ -148,8 +148,8 @@ main {
   margin-bottom: 2px;
 }
 
-/********* FIN LES 3 PARTIES DU MENU ********/
-/*********** SOUS-TITRES *************/
+/********* END THE 3 PARTS OF THE MENU 1 ********/
+/*********** SUBTITLE MENU 1 *************/
 .subtitle {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -176,8 +176,8 @@ h4:hover {
   background-size: 100% 100%;
 }
 
-/*********** FIN SOUS-TITRES *************/
-/******* LIGNES DE SEPARATION HR ********/
+/*********** END SUBTITLE MENU 1*************/
+/******* HR SEPARATION LINE 1 ********/
 hr {
   width: 300px;
   height: 5px;
@@ -188,8 +188,8 @@ hr {
   margin-right: 30px;
 }
 
-/******* FIN LIGNES DE SEPARATION HR ********/
-/********* PARAGRAPHES *******/
+/*********** END HR SEPARATION LINE 1 **************/
+/********* PARAGRAPH MENU 1 *******/
 .paragraph {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -219,8 +219,8 @@ hr {
           justify-content: space-between;
 }
 
-/********* FIN PARAGRAPHES *******/
-/**** RAPPEL TITRE DE MENU *****/
+/********* END PARAGRAPHES MENU 1 *******/
+/**** REMINDER TITLE MENU 1 *****/
 #end-of-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -245,31 +245,35 @@ hr {
   font-family: "Dancing Script", cursive;
 }
 
-/**** FIN RAPPEL TITRE DE MENU *****/
+/**** END REMINDER TITLE MENU 1 *****/
 /******* MEDIA QUERIES MENU 1 ********/
 @media all and (max-width: 900px) {
   main {
-    margin-bottom: auto;
+    height: 68em;
   }
   main h2 {
     font-size: 1em;
     margin-top: 2px;
   }
   #menu-title h2, #menu-title p {
-    font-size: 2em;
+    font-size: 2.3em;
   }
   .dish h4 {
-    font-size: 2em;
+    font-size: 1.8em;
     text-align: center;
     margin-top: -20px;
   }
   hr {
     width: 100px;
   }
-  .paragraph p {
-    font-size: 0.7em;
-    padding-right: 20px;
+  .paragraph {
+    font-size: 1.3em;
+    padding-right: 10px;
     padding-left: 15px;
+    margin-top: -30px;
+  }
+  .price {
+    margin-left: 15px;
   }
   #end-of-menu h3, #end-of-menu p {
     font-size: 1.5em;
@@ -287,7 +291,7 @@ hr {
   }
 }
 
-/******* FIN MEDIA QUERIES MENU 1 ********/
+/******* END MEDIA QUERIES MENU 1 ********/
 /********* FOOTER **********/
 footer {
   display: -webkit-box;

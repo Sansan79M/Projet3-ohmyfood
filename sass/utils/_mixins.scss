@@ -5,12 +5,9 @@
 
 //==MAIN======================================
 //main + h2 media queries menus 2-3-4
-@mixin main-adjust
-{height: 55em;
-h2{ font-size: 1em;
-margin-top:2px;
-}
-}
+@mixin h2-main-adjust
+{font-size: 1em;
+margin-top:2px;}
 
 
 //==BLOC-MENU================================

@@ -1,18 +1,20 @@
 
-/******* CORPS DE LA PAGE 3 *******/
+/******* BLOC PAGE 3 *******/
 body{@include body-margin;}
 main { height: 1650px; }
 
-/********** BLOC MENU *********/
+
+/********** BLOC MENU 3*********/
 #bloc-menu {
     width: $width-b-m;
     background-color: $background-menu3;
     @include bloc-menus-padding ;
     @include bloc-menu-align;
     @include shadow;
-  }
+}
 
-/******* TITRE MENU ******/
+
+/******* TITLE MENU 3 ******/
 #menu-title {
     @include title-center;
     margin-bottom: 30px;
@@ -24,9 +26,10 @@ main { height: 1650px; }
         -webkit-text-fill-color: transparent;
     }
 }
-/*******FIN TITRE MENU ******/
+/******* END TITLE MENU 3 ******/
 
-/********* LES 3 PARTIES DU MENU ********/
+
+/********* THE 3 PARTS OF THE MENU 3 ********/
 .dish {
     padding-top: 18px;
     padding-bottom: 15px;
@@ -35,9 +38,10 @@ main { height: 1650px; }
         margin-top: 2px;
         margin-bottom: 10px;
     }
-/********* FIN LES 3 PARTIES DU MENU ********/
+/********* END THE 3 PARTS OF THE MENU 3 ********/
 
-/*********** SOUS-TITRES *************/
+
+/*********** SUBTITLE MENU 3 *************/
 .subtitle {@include subtitle-align;
     margin-left: 40px;
     margin-right: 40px;
@@ -60,9 +64,10 @@ h4 {
 }
 #entree h4:hover, #resistance h4:hover, #dessert h4:hover 
 {@include underline;}
-/*********** FIN SOUS-TITRES *************/
+/*********** END SUBTITLE MENU 3 *************/
 
-/******* LIGNES DE SEPARATION HR ********/
+
+/******* HR SEPARATION LINE 3 ********/
 hr {
     width: 280px;
     height: 5px;
@@ -94,9 +99,10 @@ hr {
     border: 1px solid $color-text3-menu3;
     background-color: $color-text3-menu3;
 }
-/******* FIN LIGNES DE SEPARATION HR ********/
+/*********** END HR SEPARATION LINE 3 **************/
 
-/********* PARAGRAPHES MENU 3 *******/
+
+/********* PARAGRAPH MENU 3 *******/
 #entree h4, #entree p {
     color: $color-text-menu3;
 }
@@ -116,32 +122,37 @@ hr {
     padding-left: 60px;
 }
 .line {@include p-price-line;}
-/********* FIN PARAGRAPHES MENU 3*******/
+/********* END PARAGRAPH MENU 3*******/
+
 
 /******* MEDIA QUERIES MENU 3 ********/
 @media all and (max-width: 900px) {
     main
-    {@include main-adjust;}
+    {height: 58em;
+    h2 {@include h2-main-adjust;}
+    }
 
     #menu-title h2
     {font-size: 2.5em;} 
     
     .dish h4
-    {font-size:0.8em;
+    {font-size:1.1em;
     text-align: center;
     margin-top:-20px;}
     
     hr
     {@include hr-reduced;}
     
-    .paragraph p{
-        font-size:0.7em;
+    .paragraph {
+        font-size:1em;
         padding-right: 10px;
         padding-left: 15px;
         margin-top:-20px;}
 }
+    .price{margin-left:15px;}
+
 @media all and (max-width: 600px) {
     hr{@include hr-remove;}
     .subtitle{@include subtitle-center;}
 }    
-/******* FIN MEDIA QUERIES MENU 3 ********/
+/******* END MEDIA QUERIES MENU 3 ********/

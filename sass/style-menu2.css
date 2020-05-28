@@ -85,7 +85,7 @@ main h2 {
 }
 
 /********* END MAIN *********/
-/******* CORPS DE LA PAGE 2 *******/
+/******* BLOC PAGE 2 *******/
 body {
   margin: 0;
 }
@@ -94,7 +94,7 @@ main {
   height: 1450px;
 }
 
-/********** BLOC MENU *********/
+/********** BLOC MENU 2 *********/
 #bloc-menu {
   width: 80%;
   background-color: #fff5fe;
@@ -110,7 +110,7 @@ main {
           box-shadow: 6px 6px 22px grey;
 }
 
-/******* TITRE MENU ******/
+/******* TITLE MENU 2 ******/
 #menu-title {
   text-align: center;
   margin-bottom: 30px;
@@ -126,8 +126,8 @@ main {
   -webkit-text-fill-color: transparent;
 }
 
-/******* FIN TITRE MENU ******/
-/********* LES 3 PARTIES DU MENU ********/
+/******* END TITLE MENU ******/
+/********* THE 3 PARTS OF THE MENU 2 ********/
 .dish {
   padding-top: 18px;
   padding-bottom: 15px;
@@ -138,8 +138,8 @@ main {
   margin-bottom: 10px;
 }
 
-/********* FIN LES 3 PARTIES DU MENU ********/
-/*********** SOUS-TITRES *************/
+/********* END THE 3 PARTS OF THE MENU 2 ********/
+/*********** SUBTITLE MENU 2 *************/
 .subtitle {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -181,8 +181,8 @@ main {
   background-size: 100% 100%;
 }
 
-/*********** FIN SOUS-TITRES *************/
-/******* LIGNES DE SEPARATION HR ********/
+/*********** END SUBTITLE MENU 2 *************/
+/******* HR SEPARATION LINE 2 ********/
 hr {
   width: 280px;
   height: 5px;
@@ -221,8 +221,8 @@ hr {
   background-color: #6e4ccc;
 }
 
-/******* FIN LIGNES DE SEPARATION HR ********/
-/********* PARAGRAPHES MENU 2*******/
+/*********** END HR SEPARATION LINE 2 **************/
+/********* PARAGRAPH MENU 2*******/
 #entree h4, #entree p {
   color: #c67412;
 }
@@ -264,7 +264,7 @@ hr {
           justify-content: space-between;
 }
 
-/********* FIN PARAGRAPHES MENU 2*******/
+/********* END PARAGRAPH MENU 2*******/
 /******* MEDIA QUERIES MENU 2 ********/
 @media all and (max-width: 900px) {
   main {
@@ -304,7 +304,7 @@ hr {
   }
 }
 
-/******* FIN MEDIA QUERIES MENU 2 ********/
+/******* END MEDIA QUERIES MENU 2 ********/
 /********* FOOTER **********/
 footer {
   display: -webkit-box;

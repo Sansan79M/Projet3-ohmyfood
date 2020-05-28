@@ -85,7 +85,7 @@ main h2 {
 }
 
 /********* END MAIN *********/
-/******* CORPS DE LA PAGE 3 *******/
+/******* BLOC PAGE 3 *******/
 body {
   margin: 0;
 }
@@ -94,7 +94,7 @@ main {
   height: 1650px;
 }
 
-/********** BLOC MENU *********/
+/********** BLOC MENU 3*********/
 #bloc-menu {
   width: 80%;
   background-color: #edefef;
@@ -110,7 +110,7 @@ main {
           box-shadow: 6px 6px 22px grey;
 }
 
-/******* TITRE MENU ******/
+/******* TITLE MENU 3 ******/
 #menu-title {
   text-align: center;
   margin-bottom: 30px;
@@ -125,8 +125,8 @@ main {
   -webkit-text-fill-color: transparent;
 }
 
-/*******FIN TITRE MENU ******/
-/********* LES 3 PARTIES DU MENU ********/
+/******* END TITLE MENU 3 ******/
+/********* THE 3 PARTS OF THE MENU 3 ********/
 .dish {
   padding-top: 18px;
   padding-bottom: 15px;
@@ -137,8 +137,8 @@ main {
   margin-bottom: 10px;
 }
 
-/********* FIN LES 3 PARTIES DU MENU ********/
-/*********** SOUS-TITRES *************/
+/********* END THE 3 PARTS OF THE MENU 3 ********/
+/*********** SUBTITLE MENU 3 *************/
 .subtitle {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -180,8 +180,8 @@ main {
   background-size: 100% 100%;
 }
 
-/*********** FIN SOUS-TITRES *************/
-/******* LIGNES DE SEPARATION HR ********/
+/*********** END SUBTITLE MENU 3 *************/
+/******* HR SEPARATION LINE 3 ********/
 hr {
   width: 280px;
   height: 5px;
@@ -220,8 +220,8 @@ hr {
   background-color: #229df9;
 }
 
-/******* FIN LIGNES DE SEPARATION HR ********/
-/********* PARAGRAPHES MENU 3 *******/
+/*********** END HR SEPARATION LINE 3 **************/
+/********* PARAGRAPH MENU 3 *******/
 #entree h4, #entree p {
   color: black;
 }
@@ -263,11 +263,11 @@ hr {
           justify-content: space-between;
 }
 
-/********* FIN PARAGRAPHES MENU 3*******/
+/********* END PARAGRAPH MENU 3*******/
 /******* MEDIA QUERIES MENU 3 ********/
 @media all and (max-width: 900px) {
   main {
-    height: 55em;
+    height: 58em;
   }
   main h2 {
     font-size: 1em;
@@ -277,19 +277,23 @@ hr {
     font-size: 2.5em;
   }
   .dish h4 {
-    font-size: 0.8em;
+    font-size: 1.1em;
     text-align: center;
     margin-top: -20px;
   }
   hr {
     width: 100px;
   }
-  .paragraph p {
-    font-size: 0.7em;
+  .paragraph {
+    font-size: 1em;
     padding-right: 10px;
     padding-left: 15px;
     margin-top: -20px;
   }
+}
+
+.price {
+  margin-left: 15px;
 }
 
 @media all and (max-width: 600px) {
@@ -303,7 +307,7 @@ hr {
   }
 }
 
-/******* FIN MEDIA QUERIES MENU 3 ********/
+/******* END MEDIA QUERIES MENU 3 ********/
 /********* FOOTER **********/
 footer {
   display: -webkit-box;
