@@ -1,5 +1,6 @@
 /******* MUSIC NOTE ******/
 #music1, #music2, #music3 
-{ background: linear-gradient(to right, $first-color-note, $second-color-note);
+{     background: linear-gradient(to right, $first-color-note, $second-color-note);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;}
+    -webkit-text-fill-color: transparent;
+    }
