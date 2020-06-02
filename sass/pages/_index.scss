@@ -20,7 +20,7 @@ body{margin:$body-margin;}
     align-items: center;
     margin: 3%;
 }
-#bloc-menus aside {
+#bloc-menus section {
     display: flex;
     width: 500px;
     height: 650px;
@@ -38,7 +38,6 @@ body{margin:$body-margin;}
 /************ MENU 1 *************/
 #menu1 {
     background-color: $background-menu1;
-    color: $color-text-menu1;
     margin-right:$menu-margin-right;
     @include background-fade-effect;
     
@@ -55,12 +54,14 @@ body{margin:$body-margin;}
     }
 .card-title {
         font-family: $fontm1-title;
+        color:$color-text-menu1;
         font-size: 1em;
         margin-top: -30px;
         margin-bottom :-10px;
     }
 .card-name {
         font-family: $fontm1-subtitle-p;
+        color: $color-text-menu1;
         font-size: 1.5em;
         font-weight: bold;
     }
@@ -90,6 +91,7 @@ body{margin:$body-margin;}
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         margin-bottom: -10px;
+        font-size: 0.9em;
     }
 .card-name {
         color: $color-text1-menu2;
@@ -109,7 +111,7 @@ body{margin:$body-margin;}
     @include scale-opacity-start;
     transition:transform 1.5s ease-out;
     &:hover  {
-        transform: scaleY(1.8) translateY(10px);
+        transform: scaleY(2) translateY(15px);
         opacity:0.5;
 }
 }  
@@ -118,8 +120,10 @@ body{margin:$body-margin;}
         background: linear-gradient(to right, $color-text1-menu3, $color-text2-menu3, $color-text3-menu3);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        font-size: 1.4em;
+        font-size: 1.5em;
         margin-bottom: -10px;
+        padding-right: 2px;
+        padding-left: 2px;
     }
 .card-name {
         font-family: $fontm3-subtitle-p;
@@ -153,6 +157,8 @@ body{margin:$body-margin;}
         -webkit-text-fill-color: transparent;
         font-size: 1em;
         margin-bottom: -10px;
+        padding-right: 5px;
+        padding-left: 8px;
     }
 .card-name {
         color: $color-dark-menu4;
@@ -168,7 +174,7 @@ body{margin:$body-margin;}
 
 /********* MEDIA QUERIES INDEX *******/
 @media all and (max-width: 1100px) {
-    #bloc-menus aside
+    #bloc-menus section
     {width:400px;
     height:550px;
     } 
@@ -195,7 +201,7 @@ body{margin:$body-margin;}
     
     #bloc-menus {
     margin-bottom: 270px;
-    aside {
+    section {
     width:500px;
         height:650px;
     } 
@@ -206,7 +212,7 @@ body{margin:$body-margin;}
 @media all and (max-width: 600px) {
     #bloc-menus{
         margin-bottom: -180px; 
-    aside
+    section
     {width:300px;
     height:400px;}
     }

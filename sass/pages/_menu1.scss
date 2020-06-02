@@ -1,6 +1,6 @@
 /******* BLOC PAGE 1 *******/
 body{margin:$body-margin;}
-main { height: 1630px; 
+main { height: 1800px; 
 margin-bottom:110px;
 }
 
@@ -37,12 +37,15 @@ margin-bottom:110px;
 /********* THE 3 PARTS OF THE MENU 1 ********/
 .dish {
     padding-top: 25px;
+    li p{
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
-    .dish p, .line p, .subtitle {
-        margin-top: 2px;
-        margin-bottom: 2px;
+    .subtitle {
+            margin-top: 2px;
+            margin-bottom: -40px;
     }
-
+    }
 /********* END THE 3 PARTS OF THE MENU 1 ********/
 
 
@@ -81,10 +84,11 @@ hr {
     justify-content: start;
     font-size: 2em;
     font-family: $fontm1-subtitle-p;
-    padding-right: 70px;
-    padding-left: 60px;
-}
+    padding-right: 100px;
+    padding-left: 80px;
+li {list-style-type:none;} 
 .line {@include p-price-line;}
+}
 /********* END PARAGRAPHES MENU 1 *******/
 
 
@@ -108,7 +112,7 @@ hr {
 /******* MEDIA QUERIES MENU 1 ********/
 @media all and (max-width: 900px) {
     main 
-    {height: 68em;
+    {height: 75em;
     h2 {@include h2-main-adjust;}
     }
 

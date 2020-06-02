@@ -34,10 +34,14 @@ main {height: 1550px;}
 .dish {
     padding-top: 18px;
     padding-bottom: 15px;
+li p{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
-.plat p, .line p, .subtitle {
+.subtitle {
         margin-top: 2px;
-        margin-bottom: 10px;
+        margin-bottom: -40px;
+}
 }
 /********* END THE 3 PARTS OF THE MENU 4 ********/
 
@@ -91,11 +95,11 @@ hr {
     font-family: $fontm4;
     font-style: italic;
     color: $color-text-menu4;
-    padding-right: 80px;
-    padding-left:70px;
-    
-}
+    padding-right:120px;
+    padding-left:110px;
+li {list-style-type:none;} 
 .line {@include p-price-line;}
+}
 /********* END PARAGRAPH MENU 4 *******/
 
 
@@ -103,7 +107,7 @@ hr {
 
 @media all and (max-width: 900px) {
     main
-    {height: 65em;
+    {height: 70em;
     h2 {@include h2-main-adjust;}
     }
     
@@ -119,14 +123,18 @@ hr {
     
     .paragraph {
         font-size:1.1em;
-        padding-right: 17px;
-        padding-left: 15px;
-        margin-top:-20px;}
+        padding-right: 57px;
+        padding-left: 55px;
+       }
 
     .price {margin-left:15px;}
 }
 @media all and (max-width: 600px) {
     hr{@include hr-remove;}
     .subtitle{@include subtitle-center;}
+    .paragraph {
+        padding-right: 17px;
+        padding-left: 15px;
+       }
 }    
 /******* END MEDIA QUERIES MENU 4********/

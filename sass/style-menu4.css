@@ -135,9 +135,14 @@ main {
   padding-bottom: 15px;
 }
 
-.plat p, .line p, .subtitle {
-  margin-top: 2px;
+.dish li p {
+  margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.dish .subtitle {
+  margin-top: 2px;
+  margin-bottom: -40px;
 }
 
 /********* END THE 3 PARTS OF THE MENU 4 ********/
@@ -214,11 +219,15 @@ hr {
   font-family: "Shadows Into Light Two", cursive;
   font-style: italic;
   color: black;
-  padding-right: 80px;
-  padding-left: 70px;
+  padding-right: 120px;
+  padding-left: 110px;
 }
 
-.line {
+.paragraph li {
+  list-style-type: none;
+}
+
+.paragraph .line {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -234,7 +243,7 @@ hr {
 /******* MEDIA QUERIES MENU 4 ********/
 @media all and (max-width: 900px) {
   main {
-    height: 65em;
+    height: 70em;
   }
   main h2 {
     font-size: 1em;
@@ -253,9 +262,8 @@ hr {
   }
   .paragraph {
     font-size: 1.1em;
-    padding-right: 17px;
-    padding-left: 15px;
-    margin-top: -20px;
+    padding-right: 57px;
+    padding-left: 55px;
   }
   .price {
     margin-left: 15px;
@@ -270,6 +278,10 @@ hr {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .paragraph {
+    padding-right: 17px;
+    padding-left: 15px;
   }
 }
 

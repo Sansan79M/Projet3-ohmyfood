@@ -342,7 +342,7 @@ body {
   margin: 3%;
 }
 
-#bloc-menus aside {
+#bloc-menus section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -369,7 +369,6 @@ body {
 /************ MENU 1 *************/
 #menu1 {
   background-color: #fcdfdb;
-  color: #3d1319;
   margin-right: 30px;
   -webkit-transition-property: opacity;
   transition-property: opacity;
@@ -401,6 +400,7 @@ body {
 
 #menu1 .card-title {
   font-family: "Dancing Script", cursive;
+  color: #3d1319;
   font-size: 1em;
   margin-top: -30px;
   margin-bottom: -10px;
@@ -408,6 +408,7 @@ body {
 
 #menu1 .card-name {
   font-family: "Caveat", cursive;
+  color: #3d1319;
   font-size: 1.5em;
   font-weight: bold;
 }
@@ -451,6 +452,7 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: -10px;
+  font-size: 0.9em;
 }
 
 #menu2 .card-name {
@@ -485,8 +487,8 @@ body {
 }
 
 #menu3 .card:hover {
-  -webkit-transform: scaleY(1.8) translateY(10px);
-          transform: scaleY(1.8) translateY(10px);
+  -webkit-transform: scaleY(2) translateY(15px);
+          transform: scaleY(2) translateY(15px);
   opacity: 0.5;
 }
 
@@ -496,8 +498,10 @@ body {
   background: linear-gradient(to right, #0228dd, #0670f3, #229df9);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 1.4em;
+  font-size: 1.5em;
   margin-bottom: -10px;
+  padding-right: 2px;
+  padding-left: 2px;
 }
 
 #menu3 .card-name {
@@ -547,6 +551,8 @@ body {
   -webkit-text-fill-color: transparent;
   font-size: 1em;
   margin-bottom: -10px;
+  padding-right: 5px;
+  padding-left: 8px;
 }
 
 #menu4 .card-name {
@@ -560,7 +566,7 @@ body {
 /********** END INDEX **************/
 /********* MEDIA QUERIES INDEX *******/
 @media all and (max-width: 1100px) {
-  #bloc-menus aside {
+  #bloc-menus section {
     width: 400px;
     height: 550px;
   }
@@ -600,7 +606,7 @@ body {
   #bloc-menus {
     margin-bottom: 270px;
   }
-  #bloc-menus aside {
+  #bloc-menus section {
     width: 500px;
     height: 650px;
   }
@@ -613,7 +619,7 @@ body {
   #bloc-menus {
     margin-bottom: -180px;
   }
-  #bloc-menus aside {
+  #bloc-menus section {
     width: 300px;
     height: 400px;
   }

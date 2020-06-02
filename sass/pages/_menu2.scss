@@ -33,11 +33,15 @@ main {height: 1450px;}
 .dish {
     padding-top: 18px;
     padding-bottom: 15px;
+li p{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
-    .dish p, .line p, .subtitle {
+.subtitle {
         margin-top: 2px;
-        margin-bottom: 10px;
-    }
+        margin-bottom: -40px;
+}
+}
 /********* END THE 3 PARTS OF THE MENU 2 ********/
 
 
@@ -117,10 +121,11 @@ hr {
     justify-content: start;
     font-size:1.5em;
     font-family: $fontm2;
-    padding-right: 70px;
-    padding-left: 60px;
-}
+    padding-right: 120px;
+    padding-left: 110px;
+li {list-style-type:none;} 
 .line {@include p-price-line;}
+    }
 /********* END PARAGRAPH MENU 2*******/
 
 
@@ -145,8 +150,9 @@ hr {
         font-size: 1em;
         padding-right: 10px;
         padding-left: 15px;
-        margin-top:-20px;}
-    }
+    .price {margin-left:1.5em;}
+ }
+}
 
 @media all and (max-width: 600px) {
     hr{@include hr-remove;}

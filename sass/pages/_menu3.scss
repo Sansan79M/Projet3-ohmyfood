@@ -16,13 +16,13 @@ main { height: 1650px; }
 /******* TITLE MENU 3 ******/
 #menu-title {
     @include title-center;
-    margin-bottom: 30px;
    h2 {
         font-size: 6em;
         font-family: $fontm3-title;
         background: linear-gradient(to right, $color-text1-menu3, $color-text2-menu3, $color-text3-menu3);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        padding-top: 10px;
     }
 }
 /******* END TITLE MENU 3 ******/
@@ -30,13 +30,16 @@ main { height: 1650px; }
 
 /********* THE 3 PARTS OF THE MENU 3 ********/
 .dish {
-    padding-top: 18px;
     padding-bottom: 15px;
-}
-    .dish p, .line p, .subtitle {
-        margin-top: 2px;
-        margin-bottom: 10px;
+li p{
+    margin-top: 10px;
+    margin-bottom: 10px;
     }
+.subtitle {
+    margin-top: 2px;
+    margin-bottom: -40px;
+}
+}
 /********* END THE 3 PARTS OF THE MENU 3 ********/
 
 
@@ -117,10 +120,11 @@ hr {
     justify-content: start;
     font-size:1.5em;
     font-family: $fontm3-subtitle-p;
-    padding-right: 70px;
-    padding-left: 60px;
-}
+    padding-right: 120px;
+    padding-left: 110px;
+li {list-style-type:none;} 
 .line {@include p-price-line;}
+}
 /********* END PARAGRAPH MENU 3*******/
 
 
@@ -144,13 +148,13 @@ hr {
     .paragraph {
         font-size:1em;
         padding-right: 10px;
-        padding-left: 15px;
-        margin-top:-20px;}
+        padding-left: 15px;}
 }
     .price{margin-left:15px;}
 
 @media all and (max-width: 600px) {
     hr{@include hr-remove;}
     .subtitle{@include subtitle-center;}
+   
 }    
 /******* END MEDIA QUERIES MENU 3 ********/
