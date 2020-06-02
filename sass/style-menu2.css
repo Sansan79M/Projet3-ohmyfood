@@ -278,7 +278,7 @@ hr {
 /******* MEDIA QUERIES MENU 2 ********/
 @media all and (max-width: 900px) {
   main {
-    height: 55em;
+    height: 75em;
   }
   main h2 {
     font-size: 1em;
