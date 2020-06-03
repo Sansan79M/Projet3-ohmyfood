@@ -73,7 +73,6 @@ body{margin:$body-margin;}
 /************ MENU 2 *************/
 #menu2 {
     background-color: $background-menu2;
-    font-family: $fontm2;
     margin-left:$menu-margin-left;
     @include background-fade-effect;
 .card{
@@ -91,10 +90,12 @@ body{margin:$body-margin;}
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         margin-bottom: -10px;
-        font-size: 0.9em;
+        font-size: 1em;
+        font-family: $fontm2;
     }
 .card-name {
         color: $color-text1-menu2;
+        font-family: $fontm2;
         font-weight: bold;
         font-size: 1.6em;
     }

@@ -417,7 +417,6 @@ body {
 /************ MENU 2 *************/
 #menu2 {
   background-color: #fff5fe;
-  font-family: "Josefin Slab", serif;
   margin-left: 30px;
   -webkit-transition-property: opacity;
   transition-property: opacity;
@@ -452,11 +451,13 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: -10px;
-  font-size: 0.9em;
+  font-size: 1em;
+  font-family: "Josefin Slab", serif;
 }
 
 #menu2 .card-name {
   color: #c67412;
+  font-family: "Josefin Slab", serif;
   font-weight: bold;
   font-size: 1.6em;
 }
